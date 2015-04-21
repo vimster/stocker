@@ -12,9 +12,9 @@ getContent url = simpleHTTP (getRequest url) >>= getResponseBody
 addNumbers :: Integer -> Integer -> Integer
 addNumbers x y = x + y
 
-vorVier :: [Num] -> [Num]
-vorVier [] = [0]
-vorVier (x:xs) = filter (<4)
+-- vorVier :: [Num] -> [Num]
+-- vorVier [] = [0]
+-- vorVier (x:xs) = filter (<4)
 
 main :: IO ()
 main = putStrLn "hello"

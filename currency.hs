@@ -34,6 +34,7 @@ convert :: Double -- ^ Initial quantity.
         -> IO (Maybe Double) -- ^ Result.
 convert q from to = fmap (fmap v) $ getConversion from to q
 
+
 -- | As an example, we show the conversion from euros to dollars.
 --   However, feel free to change the initial quantity q and the
 --   origin/target currencies.
