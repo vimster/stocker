@@ -8,7 +8,11 @@ import qualified Data.Time.Format     as F (formatTime)
 import           Network.HTTP.Conduit (simpleHttp)
 -- import qualified Finance.Quote.Yahoo  as Yahoo
 import           Control.Applicative
+import           Data.List            (intercalate)
+import           Data.Time
 import           Network.HTTP
+import qualified Network.URI.Encode   as Enc
+import           System.Locale        (defaultTimeLocale)
 
 type QuoteSymbol = String
 
@@ -48,6 +52,18 @@ baseUrl = "https://query.yahooapis.com/v1/public/yql"
 -- 1. Perform a basic HTTP get request and return the body
 getContent :: String -> IO String
 getContent url = simpleHTTP (getRequest url) >>= getResponseBody
+
+buildHistoricalDataQuery :: Day -> Day -> [QuoteSymbol] -> String
+buildHistoricalDataQuery from to symbols =
+  let
+    dbFormat = formatTime defaultTimeLocale "%F"
+    symbolsFormatted = "'" ++ intercalate "','" symbols ++ "'"
+    query = "select * from yahoo.finance.historicaldata \
+      \where symbol in (" ++ symbolsFormatted ++ ") and \
+      \startDate = '" ++ dbFormat from ++ "' and \
+      \endDate = '" ++ dbFormat to ++ "'"
+  in
+    baseUrl ++ "?q=" ++ query ++ "&format=json"
 
 getJSON :: String -> IO B.ByteString
 getJSON = simpleHttp

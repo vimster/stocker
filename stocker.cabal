@@ -16,6 +16,16 @@ build-type:          Simple
 -- extra-source-files:  
 cabal-version:       >=1.10
 
+Test-Suite test-melody
+  type:               exitcode-stdio-1.0
+  main-is:            Main.hs
+  hs-source-dirs:     test
+  build-depends:      base >=4.6 && <4.7,
+                      test-framework,
+                      test-framework-hunit,
+                      HUnit,
+                      containers == 0.5.*
+
 executable stocker
   ghc-options:         -Wall
   main-is:             Main.hs
@@ -27,6 +37,9 @@ executable stocker
                        aeson,
                        time,
                        bytestring,
+                       uri-encode,
+                       old-locale,
                        http-conduit,
                        HTTP
+
 
