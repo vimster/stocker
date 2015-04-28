@@ -39,6 +39,7 @@ executable stocker
                        bytestring,
                        uri-encode,
                        old-locale,
+                       containers,
                        http-conduit,
                        HTTP
 
