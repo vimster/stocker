@@ -9,7 +9,8 @@ import qualified Data.Time.Format           as F (formatTime)
 import           Network.HTTP.Conduit       (simpleHttp)
 -- import qualified Finance.Quote.Yahoo  as Yahoo
 import           Control.Applicative
-import           Data.List                  (intercalate)
+import           Data.List                  (groupBy, intercalate)
+import qualified Data.Map                   as Map
 import           Data.Time
 import           Network.HTTP
 import qualified Network.URI.Encode         as Enc
@@ -38,7 +39,10 @@ data HistoricalQuote = HistoricalQuote {
         close  :: QuoteCurrency
         -- adjclose :: QuoteCurrency,
         -- volume   :: Int
-        } deriving (Show)
+        } deriving (Show, Eq)
+
+instance Ord HistoricalQuote where
+  HistoricalQuote {date = d} <= HistoricalQuote {date = d2} = d <= d2
 
 instance FromJSON QuoteList where
   parseJSON (Object v) =
@@ -59,8 +63,16 @@ instance FromJSON HistoricalQuote where
 baseUrl :: String
 baseUrl = "http://query.yahooapis.com/v1/public/yql"
 
--- getHistoricalData :: [QuoteSymbol] -> IO [HistoricalQuote]
--- getHistoricalData symbols =
+getHistoricalData :: [QuoteSymbol] -> Day -> Day -> IO (Map.Map QuoteSymbol QuoteList)
+getHistoricalData symbols from to = do
+  content <- getJSON $ buildHistoricalDataQuery from to symbols
+  let parsed = decode content :: Maybe QuoteList
+  transformHistoricalData <$> parsed
+
+transformHistoricalData :: Maybe QuoteList -> Map.Map QuoteSymbol QuoteList
+transformHistoricalData (Just q) = Map.empty -- Map.fromList $ map (\a -> (symbol a, a)) $ groupBy (\a b -> symbol a == symbol a) q
+transformHistoricalData Nothing = Map.empty
+
 
 -- 1. Perform a basic HTTP get request and return the body
 getContent :: String -> IO String
@@ -86,10 +98,15 @@ testJson = BS.pack "{\"query\":{\"results\":{\"quote\":[{\"Symbol\":\"YHOO\",\"D
 
 main :: IO ()
 main = do
+  historicalData <- getHistoricalData testQuotes testFrom testTo
+  print historicalData
+  putStrLn "finished"
+
+testmain :: IO ()
+testmain = do
   content <- getJSON $ buildHistoricalDataQuery testFrom testTo testQuotes
   print content
   let historicalData = eitherDecode content :: Either String [HistoricalQuote]
   case historicalData of
     Left error -> putStrLn error
     Right ps -> print ps
-
