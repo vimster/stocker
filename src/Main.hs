@@ -4,6 +4,7 @@ module Main where
 import           Data.Aeson
 import qualified Data.ByteString.Lazy       as B
 import qualified Data.ByteString.Lazy.Char8 as BS
+import qualified Data.Function              as Func (on)
 import qualified Data.Time.Calendar         as T (Day (..), fromGregorian)
 import qualified Data.Time.Format           as F (formatTime)
 import           Network.HTTP.Conduit       (simpleHttp)
@@ -33,10 +34,10 @@ newtype QuoteList = QuoteList [HistoricalQuote] deriving (Show)
 data HistoricalQuote = HistoricalQuote {
         symbol :: QuoteSymbol,
         date   :: String,
-        open   :: QuoteCurrency,
-        high   :: QuoteCurrency,
-        low    :: QuoteCurrency,
-        close  :: QuoteCurrency
+        open   :: String,
+        high   :: String,
+        low    :: String,
+        close  :: String
         -- adjclose :: QuoteCurrency,
         -- volume   :: Int
         } deriving (Show, Eq)
@@ -63,14 +64,14 @@ instance FromJSON HistoricalQuote where
 baseUrl :: String
 baseUrl = "http://query.yahooapis.com/v1/public/yql"
 
-getHistoricalData :: [QuoteSymbol] -> Day -> Day -> IO (Map.Map QuoteSymbol QuoteList)
+getHistoricalData :: [QuoteSymbol] -> Day -> Day -> IO (Map.Map QuoteSymbol [HistoricalQuote])
 getHistoricalData symbols from to = do
   content <- getJSON $ buildHistoricalDataQuery from to symbols
   let parsed = decode content :: Maybe QuoteList
-  transformHistoricalData <$> parsed
+  return $ transformHistoricalData parsed
 
-transformHistoricalData :: Maybe QuoteList -> Map.Map QuoteSymbol QuoteList
-transformHistoricalData (Just q) = Map.empty -- Map.fromList $ map (\a -> (symbol a, a)) $ groupBy (\a b -> symbol a == symbol a) q
+transformHistoricalData :: Maybe QuoteList -> Map.Map QuoteSymbol [HistoricalQuote]
+transformHistoricalData (Just (QuoteList q)) = Map.fromList $ map (\a -> (symbol (head a), a)) $ groupBy (Func.on (==) symbol) q
 transformHistoricalData Nothing = Map.empty
 
 
@@ -102,10 +103,16 @@ main = do
   print historicalData
   putStrLn "finished"
 
+parseJson :: IO ()
+parseJson = do
+  let historicalData = eitherDecode testJson :: Either String QuoteList
+  print historicalData
+
+
+
 testmain :: IO ()
 testmain = do
   content <- getJSON $ buildHistoricalDataQuery testFrom testTo testQuotes
-  print content
   let historicalData = eitherDecode content :: Either String [HistoricalQuote]
   case historicalData of
     Left error -> putStrLn error
