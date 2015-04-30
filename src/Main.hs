@@ -10,9 +10,10 @@ import qualified Data.Time.Format           as F (formatTime)
 import           Network.HTTP.Conduit       (simpleHttp)
 -- import qualified Finance.Quote.Yahoo  as Yahoo
 import           Control.Applicative
-import           Data.List                  (groupBy, intercalate)
+import           Data.List                  (groupBy, intercalate, maximumBy)
 import qualified Data.Map                   as Map
 import           Data.Time
+import           Data.Time.Clock
 import           Network.HTTP
 import qualified Network.URI.Encode         as Enc
 import           System.Locale              (defaultTimeLocale)
@@ -30,10 +31,10 @@ newtype QuoteList = QuoteList [HistoricalQuote] deriving (Show)
 data HistoricalQuote = HistoricalQuote {
         symbol :: QuoteSymbol,
         date   :: String,
-        open   :: String,
-        high   :: String,
-        low    :: String,
-        close  :: String
+        open   :: Float,
+        high   :: Float,
+        low    :: Float,
+        close  :: Float
         -- adjclose :: QuoteCurrency,
         -- volume   :: Int
         } deriving (Show, Eq)
@@ -46,14 +47,17 @@ instance FromJSON QuoteList where
     QuoteList <$> (res >>= (.: "quote"))
     where res = (v .: "query") >>= (.: "results")
 
+toFloat :: String -> Float
+toFloat = read
+
 instance FromJSON HistoricalQuote where
   parseJSON (Object v) = HistoricalQuote <$>
     (v .: "Symbol") <*>
     (v .: "Date") <*>
-    (v .: "Open") <*>
-    (v .: "High") <*>
-    (v .: "Low") <*>
-    (v .: "Close")
+    fmap toFloat (v .: "Open") <*>
+    fmap toFloat (v .: "High") <*>
+    fmap toFloat (v .: "Low") <*>
+    fmap toFloat (v .: "Close")
     -- where res = (v .: "query") >>= (.: "results") >>= (.: "quote")
   -- parseJSON _ = mzero
 
@@ -95,15 +99,22 @@ getJSON :: String -> IO B.ByteString
 getJSON = simpleHttp
 
 filterSymbolsOfInterest :: QuoteMap -> QuoteMap
-filterSymbolsOfInterest =
-  Map.filter ((>4) . length)
+filterSymbolsOfInterest = Map.filter isQuoteOfInterest
+
+isQuoteOfInterest :: [HistoricalQuote] -> Bool
+isQuoteOfInterest list =
+  let maximumPrice = maximum $ map high list
+      latestData = maximumBy (compare `Func.on` date) list
+      minimumPrice = low latestData
+  in minimumPrice < maximumPrice * 0.8
 
 testJson = BS.pack "{\"query\":{\"results\":{\"quote\":[{\"Symbol\":\"YHOO\",\"Date\":\"2015-04-24\",\"Open\":\"43.73\",\"High\":\"44.71\",\"Low\":\"43.69\",\"Close\":\"44.52\",\"Volume\":\"11267500\",\"Adj_Close\":\"44.52\"}]}}}"
 
 main :: IO ()
 main = do
-  historicalData <- getHistoricalData testQuotes testFrom testTo
-  print historicalData
+  today <- fmap utctDay getCurrentTime
+  historicalData <- getHistoricalData testQuotes (addDays (-7) today) today
+  print $ filterSymbolsOfInterest historicalData
   putStrLn "finished"
 
 
