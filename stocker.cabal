@@ -39,6 +39,7 @@ executable stocker
                        bytestring,
                        uri-encode,
                        old-locale,
+                       smtp-mail,
                        containers,
                        http-conduit,
                        HTTP
