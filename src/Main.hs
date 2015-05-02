@@ -1,11 +1,14 @@
 {-# LANGUAGE OverloadedStrings #-}
 module Main where
 
-import qualified Data.Function as Func (on)
-import           Data.List     (maximumBy)
-import qualified Data.Map      as Map
+import           Data.Configurator
+import           Data.Configurator.Types     (Config)
+import qualified Data.Function               as Func (on)
+import           Data.List                   (intercalate, maximumBy)
+import qualified Data.Map                    as Map
 import           Data.Time
-import qualified Yahoofinance  as Yahoo
+import           Network.HaskellNet.SMTP.SSL as SMTP
+import qualified Yahoofinance                as Yahoo
 
 
 testFrom :: Day
@@ -28,8 +31,30 @@ isQuoteOfInterest list =
 stockInfoUrl :: Yahoo.QuoteSymbol -> String
 stockInfoUrl symbol = "http://finance.yahoo.com/q?s=" ++ symbol
 
+loadConfig :: IO Config
+loadConfig = load [Required "appconfig.cfg"]
+
+host :: String
+host = "smtp.zoho.com"
+
+sendEmail :: String -> String -> String-> Yahoo.QuoteMap -> IO ()
+sendEmail username password receiver quotes = doSMTPSTARTTLS host $ \conn -> do
+    authSucceed <- SMTP.authenticate LOGIN username password conn
+    if authSucceed
+      then print "Authentication error."
+      else sendPlainTextMail receiver username subject body conn
+  where subject = "Achtung! Gefallene Kurse"
+        body    = "test" -- intercalate "\n" $ map (\q -> Yahoo.symbol q ++ ": " ++ stockInfoUrl (Yahoo.symbol q)) quotes
+
 main :: IO ()
 main = do
   today <- fmap utctDay getCurrentTime
+  config <- loadConfig
+  username <- require config "email_user" :: IO String
+  password <- require config "email_password" :: IO String
+  receiver <- require config "email_receiver" :: IO [String]
+  print receiver
   historicalData <- Yahoo.getHistoricalData testQuotes (addDays (-7) today) today
-  print $ filterSymbolsOfInterest historicalData
+  let dataOfInterest = filterSymbolsOfInterest historicalData
+  print dataOfInterest
+  sendEmail username password (head receiver) dataOfInterest

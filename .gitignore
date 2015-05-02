@@ -58,3 +58,4 @@ cabal.config
 *.prof
 *.hp
 *.aux
+*.cfg

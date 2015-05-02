@@ -39,7 +39,8 @@ executable stocker
                        bytestring,
                        uri-encode,
                        old-locale,
-                       smtp-mail,
+                       HaskellNet-SSL,
+                       configurator,
                        containers,
                        http-conduit,
                        HTTP
