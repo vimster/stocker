@@ -11,7 +11,13 @@ import qualified Data.Map                    as Map
 import qualified Data.Text.Lazy              as T
 import           Data.Time
 import           Network.HaskellNet.SMTP.SSL as SMTP
+import           System.Directory            (getCurrentDirectory,
+                                              getDirectoryContents)
+import           System.Environment
+import           System.FilePath
+import           System.IO                   ()
 import qualified Yahoofinance                as Yahoo
+
 
 
 testFrom :: Day
@@ -31,12 +37,30 @@ isQuoteOfInterest list =
       minimumPrice = Yahoo.low latestData
   in minimumPrice < maximumPrice * 1.8
 
+
+------------------------------------------------------------------------
+--  IO
+------------------------------------------------------------------------
+
+isRegularFile :: FilePath -> Bool
+isRegularFile f = f /= "." && f /= ".." && takeExtension f == ".txt"
+
+-- | read dir
+readDir :: String -> IO [FilePath]
+readDir path = do
+  directory <- getCurrentDirectory
+  filter isRegularFile <$> getDirectoryContents (directory ++ "/" ++ path)
+
+
 stockInfoUrl :: Yahoo.QuoteSymbol -> String
 stockInfoUrl symbol = "http://finance.yahoo.com/q?s=" ++ symbol
 
 loadConfig :: IO Config
 loadConfig = load [Required "appconfig.cfg"]
 
+------------------------------------------------------------------------
+--  Email
+------------------------------------------------------------------------
 host :: String
 host = "smtp.zoho.com"
 
@@ -52,8 +76,15 @@ sendEmail username password receivers quotes = doSMTPSTARTTLS host $ \conn -> do
   where subject = "Gefallene Kurse"
         body    =   T.pack $ (headline++) $ intercalate "\n" $ map (\q -> q ++ ": " ++ stockInfoUrl q) (Map.keys quotes)
 
+
+
+
+
 main :: IO ()
 main = do
+  filePaths <- map ("symbols/"++) <$> readDir "symbols/"
+  contents <- mapM readFile filePaths
+
   yesterday <- addDays (-1) <$> fmap utctDay getCurrentTime
   config <- loadConfig
   username <- require config "email_user" :: IO String
@@ -62,4 +93,4 @@ main = do
   historicalData <- Yahoo.getHistoricalData testQuotes (addDays (-7) yesterday) yesterday
   let dataOfInterest = filterSymbolsOfInterest historicalData
   print dataOfInterest
-  sendEmail username password receiver dataOfInterest
+  -- sendEmail username password receiver dataOfInterest
