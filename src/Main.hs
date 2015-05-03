@@ -58,13 +58,15 @@ readDir path = do
 delimiter :: DecodeOptions
 delimiter = defaultDecodeOptions {decDelimiter = fromIntegral $ ord '\t'}
 
+testTsv = BS.pack "haus\tmaus\ntor\tpforte\n"
+
 parseTsv :: String -> Map.Map String String
 parseTsv content =
   let input = BS.pack content
       result = decodeWith delimiter HasHeader input :: Either String (V.Vector (String, String))
   in case result of
     Left _ -> Map.empty
-    Right v -> Map.empty
+    Right v -> V.foldl (\m (a, b) -> Map.insert a b m) Map.empty v
 
 
 stockInfoUrl :: Yahoo.QuoteSymbol -> String
@@ -92,13 +94,12 @@ sendEmail username password receivers quotes = doSMTPSTARTTLS host $ \conn -> do
         body    =   T.pack $ (headline++) $ intercalate "\n" $ map (\q -> q ++ ": " ++ stockInfoUrl q) (Map.keys quotes)
 
 
-
-
-
 main :: IO ()
 main = do
   filePaths <- map ("symbols/"++) <$> readDir "symbols/"
   contents <- mapM readFile filePaths
+  let huhu = parseTsv (head contents)
+  -- print huhu
   yesterday <- addDays (-1) <$> fmap utctDay getCurrentTime
   config <- loadConfig
   username <- require config "email_user" :: IO String
@@ -106,5 +107,5 @@ main = do
   receiver <- require config "email_receiver" :: IO [String]
   historicalData <- Yahoo.getHistoricalData testQuotes (addDays (-7) yesterday) yesterday
   let dataOfInterest = filterSymbolsOfInterest historicalData
-  print dataOfInterest
+  print "huhu"
   -- sendEmail username password receiver dataOfInterest
