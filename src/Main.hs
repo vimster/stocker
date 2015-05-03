@@ -32,15 +32,20 @@ testTo = fromGregorian 2015 04 08
 testQuotes :: [String]
 testQuotes = ["YHOO"]
 
+maximumPrice :: [Yahoo.HistoricalQuote] -> Float
+maximumPrice = maximum . map Yahoo.high
+
+minimumPrice :: [Yahoo.HistoricalQuote] -> Float
+minimumPrice = minimum . map Yahoo.low
+
 filterSymbolsOfInterest :: Yahoo.QuoteMap -> Yahoo.QuoteMap
 filterSymbolsOfInterest = Map.filter isQuoteOfInterest
 
 isQuoteOfInterest :: [Yahoo.HistoricalQuote] -> Bool
 isQuoteOfInterest list =
-  let maximumPrice = maximum $ map Yahoo.high list
-      latestData = maximumBy (compare `Func.on` Yahoo.date) list
+  let latestData = maximumBy (compare `Func.on` Yahoo.date) list
       minimumPrice = Yahoo.low latestData
-  in minimumPrice < maximumPrice * 0.8
+  in minimumPrice > 1 && minimumPrice < maximumPrice list * 0.8
 
 
 ------------------------------------------------------------------------
@@ -83,7 +88,7 @@ host :: String
 host = "smtp.zoho.com"
 
 headline :: String
-headline = "Folgende Kurse sind in der letzten Woche um mehr als 20% gesunken:\n\n"
+headline = "Folgende Kurse sind in der letzten Woche um mehr als 20% gesunken:\n"
 
 sendEmail :: String -> String -> [String]-> Yahoo.QuoteMap -> IO ()
 sendEmail username password receivers quotes = doSMTPSTARTTLS host $ \conn -> do
@@ -92,22 +97,24 @@ sendEmail username password receivers quotes = doSMTPSTARTTLS host $ \conn -> do
       then print "Authentication error."
       else mapM_ (\r -> sendPlainTextMail r username subject body conn) receivers
   where subject = "Gefallene Kurse"
-        body    =   T.pack $ (headline++) $ intercalate "\n" $ map (\q -> q ++ ": " ++ stockInfoUrl q) (Map.keys quotes)
+        body    = T.pack $ (headline++) $ intercalate "\n" $ map (\q -> q ++ " (-" ++ show (diff q) ++ "%): " ++ stockInfoUrl q) (Map.keys quotes)
+        list k  = Map.findWithDefault [] k quotes
+        diff k  = 100 - (minimumPrice (list k) * 100 / maximumPrice (list k))
 
 
 main :: IO ()
 main = do
   filePaths <- map ("symbols/"++) <$> readDir "symbols/"
   contents <- mapM readFile filePaths
-  let huhu = parseTsv (head contents)
-  -- print huhu
-  print (Map.size huhu)
+  let symbols = parseTsv (head contents)
+  putStr "symbol count: "
+  print (Map.size symbols)
   yesterday <- addDays (-1) <$> fmap utctDay getCurrentTime
   config <- loadConfig
   username <- require config "email_user" :: IO String
   password <- require config "email_password" :: IO String
   receiver <- require config "email_receiver" :: IO [String]
-  historicalData <- Yahoo.getHistoricalData (Map.keys huhu) (addDays (-7) yesterday) yesterday
+  historicalData <- Yahoo.getHistoricalData (Map.keys symbols) (addDays (-7) yesterday) yesterday
   let dataOfInterest = filterSymbolsOfInterest historicalData
   print dataOfInterest
   print "finished"

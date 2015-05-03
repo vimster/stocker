@@ -82,11 +82,6 @@ transformHistoricalData (Just (QuoteList q)) =
     groupedBySymbol = groupBy (Func.on (==) symbol) q
 transformHistoricalData Nothing = Map.empty
 
-
--- -- 1. Perform a basic HTTP get request and return the body
--- getContent :: String -> IO String
--- getContent url = simpleHTTP (getRequest url) >>= getResponseBody
-
 buildHistoricalDataQuery :: Day -> Day -> [QuoteSymbol] -> String
 buildHistoricalDataQuery from to symbols =
   let
