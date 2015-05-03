@@ -55,11 +55,16 @@ readDir path = do
   directory <- getCurrentDirectory
   filter isRegularFile <$> getDirectoryContents (directory ++ "/" ++ path)
 
+delimiter :: DecodeOptions
+delimiter = defaultDecodeOptions {decDelimiter = fromIntegral $ ord '\t'}
+
 parseTsv :: String -> Map.Map String String
 parseTsv content =
   let input = BS.pack content
-      parsed = decodeWith defaultDecodeOptions {decDelimiter = fromIntegral $ ord '\t'} NoHeader input :: Either String (V.Vector (String, String))
-  in Map.empty
+      result = decodeWith delimiter HasHeader input :: Either String (V.Vector (String, String))
+  in case result of
+    Left _ -> Map.empty
+    Right v -> Map.empty
 
 
 stockInfoUrl :: Yahoo.QuoteSymbol -> String
