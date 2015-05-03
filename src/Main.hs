@@ -3,13 +3,17 @@ module Main where
 
 import           Control.Applicative
 import           Control.Monad
+import qualified Data.ByteString.Lazy.Char8  as BS
+import           Data.Char
 import           Data.Configurator
 import           Data.Configurator.Types     (Config)
+import           Data.Csv
 import qualified Data.Function               as Func (on)
 import           Data.List                   (intercalate, maximumBy)
 import qualified Data.Map                    as Map
 import qualified Data.Text.Lazy              as T
 import           Data.Time
+import qualified Data.Vector                 as V
 import           Network.HaskellNet.SMTP.SSL as SMTP
 import           System.Directory            (getCurrentDirectory,
                                               getDirectoryContents)
@@ -51,6 +55,12 @@ readDir path = do
   directory <- getCurrentDirectory
   filter isRegularFile <$> getDirectoryContents (directory ++ "/" ++ path)
 
+parseTsv :: String -> Map.Map String String
+parseTsv content =
+  let input = BS.pack content
+      parsed = decodeWith defaultDecodeOptions {decDelimiter = fromIntegral $ ord '\t'} NoHeader input :: Either String (V.Vector (String, String))
+  in Map.empty
+
 
 stockInfoUrl :: Yahoo.QuoteSymbol -> String
 stockInfoUrl symbol = "http://finance.yahoo.com/q?s=" ++ symbol
@@ -84,7 +94,6 @@ main :: IO ()
 main = do
   filePaths <- map ("symbols/"++) <$> readDir "symbols/"
   contents <- mapM readFile filePaths
-
   yesterday <- addDays (-1) <$> fmap utctDay getCurrentTime
   config <- loadConfig
   username <- require config "email_user" :: IO String

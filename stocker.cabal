@@ -40,6 +40,7 @@ executable stocker
                        uri-encode,
                        old-locale,
                        text,
+                       vector,
                        filepath,
                        directory,
                        cassava,
