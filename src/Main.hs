@@ -39,7 +39,7 @@ isQuoteOfInterest list =
   let maximumPrice = maximum $ map Yahoo.high list
       latestData = maximumBy (compare `Func.on` Yahoo.date) list
       minimumPrice = Yahoo.low latestData
-  in minimumPrice < maximumPrice * 1.8
+  in minimumPrice < maximumPrice * 0.8
 
 
 ------------------------------------------------------------------------
@@ -100,12 +100,14 @@ main = do
   contents <- mapM readFile filePaths
   let huhu = parseTsv (head contents)
   -- print huhu
+  print (Map.size huhu)
   yesterday <- addDays (-1) <$> fmap utctDay getCurrentTime
   config <- loadConfig
   username <- require config "email_user" :: IO String
   password <- require config "email_password" :: IO String
   receiver <- require config "email_receiver" :: IO [String]
-  historicalData <- Yahoo.getHistoricalData testQuotes (addDays (-7) yesterday) yesterday
+  historicalData <- Yahoo.getHistoricalData (take 1200 (Map.keys huhu)) (addDays (-7) yesterday) yesterday
   let dataOfInterest = filterSymbolsOfInterest historicalData
+  print dataOfInterest
   print "huhu"
-  -- sendEmail username password receiver dataOfInterest
+  sendEmail username password receiver dataOfInterest

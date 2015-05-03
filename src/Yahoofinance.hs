@@ -3,6 +3,7 @@ module Yahoofinance
 ( getHistoricalData
 , HistoricalQuote (..)
 , QuoteMap
+, buildHistoricalDataQuery
 , QuoteSymbol
 ) where
 
