@@ -41,6 +41,7 @@ executable stocker
                        old-locale,
                        text,
                        vector,
+                       split,
                        filepath,
                        directory,
                        cassava,

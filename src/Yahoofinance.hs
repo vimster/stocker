@@ -13,6 +13,7 @@ import qualified Data.ByteString.Lazy       as B
 import qualified Data.ByteString.Lazy.Char8 as BS
 import qualified Data.Function              as Func (on)
 import           Data.List                  (groupBy, intercalate)
+import           Data.List.Split
 import qualified Data.Map                   as Map
 import           Data.Time
 import           Data.Time.Calendar         (Day (..), fromGregorian)
@@ -66,10 +67,13 @@ baseUrl :: String
 baseUrl = "http://query.yahooapis.com/v1/public/yql"
 
 getHistoricalData :: [QuoteSymbol] -> Day -> Day -> IO QuoteMap
-getHistoricalData symbols from to = do
-  content <- getJSON $ buildHistoricalDataQuery from to symbols
-  let parsed = decode content :: Maybe QuoteList
-  return $ transformHistoricalData parsed
+getHistoricalData symbols from to
+  | len > 500 = Map.unions <$> mapM (\s -> getHistoricalData s from to) (chunk 500 symbols)
+  | otherwise = do
+    content <- getJSON $ buildHistoricalDataQuery from to symbols
+    let parsed = decode content :: Maybe QuoteList
+    return $ transformHistoricalData parsed
+  where len = length symbols
 
 transformHistoricalData :: Maybe QuoteList -> QuoteMap
 transformHistoricalData (Just (QuoteList q)) =

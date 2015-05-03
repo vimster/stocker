@@ -10,6 +10,7 @@ import           Data.Configurator.Types     (Config)
 import           Data.Csv
 import qualified Data.Function               as Func (on)
 import           Data.List                   (intercalate, maximumBy)
+import           Data.List.Split
 import qualified Data.Map                    as Map
 import qualified Data.Text.Lazy              as T
 import           Data.Time
@@ -106,8 +107,8 @@ main = do
   username <- require config "email_user" :: IO String
   password <- require config "email_password" :: IO String
   receiver <- require config "email_receiver" :: IO [String]
-  historicalData <- Yahoo.getHistoricalData (take 1200 (Map.keys huhu)) (addDays (-7) yesterday) yesterday
+  historicalData <- Yahoo.getHistoricalData (Map.keys huhu) (addDays (-7) yesterday) yesterday
   let dataOfInterest = filterSymbolsOfInterest historicalData
   print dataOfInterest
-  print "huhu"
+  print "finished"
   sendEmail username password receiver dataOfInterest
