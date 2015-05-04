@@ -90,16 +90,17 @@ host = "smtp.zoho.com"
 headline :: String
 headline = "Folgende Kurse sind in der letzten Woche um mehr als 20% gesunken:\n"
 
-sendEmail :: String -> String -> [String]-> Yahoo.QuoteMap -> IO ()
-sendEmail username password receivers quotes = doSMTPSTARTTLS host $ \conn -> do
+sendEmail :: String -> String -> [String]-> Yahoo.QuoteMap -> Map.Map String String -> IO ()
+sendEmail username password receivers quotes symbols = doSMTPSTARTTLS host $ \conn -> do
     authSucceed <- SMTP.authenticate LOGIN username password conn
     if authSucceed
-      then print "Authentication error."
-      else mapM_ (\r -> sendPlainTextMail r username subject body conn) receivers
+      then mapM_ (\r -> sendPlainTextMail r username subject body conn) receivers
+      else print "Authentication error."
   where subject = "Gefallene Kurse"
-        body    = T.pack $ (headline++) $ intercalate "\n" $ map (\q -> q ++ " (-" ++ show (diff q) ++ "%): " ++ stockInfoUrl q) (Map.keys quotes)
+        body    = T.pack $ (headline++) $ intercalate "\n" $ map (\q -> sym q ++ "-" ++ q ++ " (-" ++ show (diff q) ++ "%): " ++ stockInfoUrl q) (Map.keys quotes)
         list k  = Map.findWithDefault [] k quotes
-        diff k  = 100 - (minimumPrice (list k) * 100 / maximumPrice (list k))
+        sym k  = Map.findWithDefault "" k symbols
+        diff k  = truncate $ 100 - (minimumPrice (list k) * 100 / maximumPrice (list k))
 
 
 main :: IO ()
@@ -118,4 +119,6 @@ main = do
   let dataOfInterest = filterSymbolsOfInterest historicalData
   print dataOfInterest
   print "finished"
-  sendEmail username password receiver dataOfInterest
+  if Map.null dataOfInterest
+    then print "no quotes of interest found"
+    else sendEmail username password receiver dataOfInterest symbols
