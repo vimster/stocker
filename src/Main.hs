@@ -44,8 +44,9 @@ filterSymbolsOfInterest = Map.filter isQuoteOfInterest
 isQuoteOfInterest :: [Yahoo.HistoricalQuote] -> Bool
 isQuoteOfInterest list =
   let latestData = maximumBy (compare `Func.on` Yahoo.date) list
-      minimumPrice = Yahoo.low latestData
-  in minimumPrice > 1 && minimumPrice < maximumPrice list * 0.8
+      latestLow = Yahoo.low latestData
+      dataWithoutLatest = filter (/= latestData) list
+  in latestLow > 1 && latestLow < maximumPrice dataWithoutLatest * 0.8
 
 
 ------------------------------------------------------------------------
@@ -97,7 +98,7 @@ sendEmail username password receivers quotes symbols = doSMTPSTARTTLS host $ \co
       then mapM_ (\r -> sendPlainTextMail r username subject body conn) receivers
       else print "Authentication error."
   where subject = "Gefallene Kurse"
-        body    = T.pack $ (headline++) $ intercalate "\n" $ map (\q -> sym q ++ "-" ++ q ++ " (-" ++ show (diff q) ++ "%): " ++ stockInfoUrl q) (Map.keys quotes)
+        body    = T.pack $ (headline++) $ intercalate "\n" $ map (\q -> "[" ++ q ++ "] " ++ sym q ++ " (-" ++ show (diff q) ++ "%): " ++ stockInfoUrl q) (Map.keys quotes)
         list k  = Map.findWithDefault [] k quotes
         sym k  = Map.findWithDefault "" k symbols
         diff k  = truncate $ 100 - (minimumPrice (list k) * 100 / maximumPrice (list k))
@@ -117,8 +118,8 @@ main = do
   receiver <- require config "email_receiver" :: IO [String]
   historicalData <- Yahoo.getHistoricalData (Map.keys symbols) (addDays (-7) yesterday) yesterday
   let dataOfInterest = filterSymbolsOfInterest historicalData
-  print dataOfInterest
-  print "finished"
+  putStr "quotes found: "
+  print $ Map.size dataOfInterest
   if Map.null dataOfInterest
     then print "no quotes of interest found"
     else sendEmail username password receiver dataOfInterest symbols
