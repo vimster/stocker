@@ -2223,7 +2223,6 @@ BLN.V	Blackline GPS Corp.
 FZM.F	ZTE -H-
 OINA.BE	OPTION
 ETL.PA	Eutelsat Communications Socit Anonyme
-
 KUD.F	KUDELSKI
 WJL.SG	WI-LAN
 AVNW	Aviat Networks, Inc.
@@ -2525,7 +2524,6 @@ ZYT.F	NEVADA COPPER
 PRECWIRE.BO	Precision Wires India Ltd.
 ZNC.AX	Zenith Minerals Limited
 SXG.AX	Southern Cross Gold Fields Ltd
-
 SCCO	Southern Copper Corp.
 SRR.AX	Shaw River Manganese Limited
 WCP.AX	WCP Resources Limited
@@ -2673,7 +2671,6 @@ TKM.F	TAKASHIMAYA CO LTD
 HVN.AX	Harvey Norman Holdings Ltd.
 SHOS	Sears Hometown and Outlet Stores, Inc.
 HUWA.DE	Hutchison Whampoa Limited
-	Macy's, Inc.
 0312.HK	SHIRBLE STORE
 0984.HK	Aeon Stores (Hong Kong) Co. Limited
 SORIANAB.MX	Organizacion Soriana SAB de CV
@@ -3023,7 +3020,6 @@ KSB.MU	KSB
 9F.SI	XMH Holdings Ltd.
 NDX1.HA	NORDEX
 THER.PA	Thermocompact Socit Anonyme
-
 CMUA.BE	CN MING YANG SP ADR
 WI4.DE	Weichai Power Co. Ltd
 TIMKEN.BO	Timken India Limited
@@ -3082,7 +3078,6 @@ OTI.AX	Oriental Technologies Investment
 KAX2.SG	KARDEX N
 OBH.F	OC OERLIKON CORP N
 DUE.DE	Drr Aktiengesellschaft
-
 XH.DE	M.A.X. Automation Ag
 JUN3.HA	JUNGHEINRICH VZ
 ZGL.AX	Zicom Group Limited
@@ -3111,7 +3106,6 @@ KLBRENG-B.BO	Kilburn Engineering Limited
 RO.L	Melrose Industries PLC
 NDX1.DE	Nordex SE
 EKC.BO	Everest Kanto Cylinder Limited
-	3M Company
 ITT	ITT Corporation
 ANDREWYU.BO	Andrew Yule & Company Ltd.
 CMI	Cummins Inc.
@@ -3194,7 +3188,6 @@ WEIR.L	The Weir Group PLC
 JUN3.SG	JUNGHEINRICH VZ
 POWL	Powell Industries, Inc.
 NEX.PA	Nexans  Socit Anonyme
-
 SIS.TO	Savaria Corp.
 HDD.HA	HEIDELBERGER DRUCKM
 CW	Curtiss-Wright Corporation
@@ -3415,7 +3408,6 @@ TNXP	Tonix Pharmaceuticals Holding Corp
 LLY.DE	Eli Lilly and Company
 AZN.L	AstraZeneca PLC
 LFER.PA	Ferco Dveloppement
-
 PVCT	Provectus Biopharmaceuticals, Inc.
 ZEGA.SG	ASTRAZENECA SP ADR
 KBIO	KaloBios Pharmaceuticals, Inc.
@@ -3461,7 +3453,6 @@ INNV	Innovus Pharmaceuticals, Inc.
 VSC.AX	Vita Life Sciences Limited
 SNW.SG	SANOFI
 VETO.PA	Vtoquinol SA
-
 ANTH	Anthera Pharmaceuticals, Inc.
 ZYDEN.BO	Zyden Gentec Ltd.
 NATCAPSUQ.BO	Natural Capsules Ltd.
@@ -3563,7 +3554,6 @@ VRX.TO	Valeant Pharmaceuticals International, Inc.
 ACT	Actavis plc
 RLMD	Relmada Therapeutics, Inc.
 INNL	Innocoll AG
-
 NK	Mallinckrodt public limited company
 IRWD	Ironwood Pharmaceuticals, Inc.
 TRGM	Targeted Medical Pharma, Inc.
@@ -3735,7 +3725,6 @@ KPO.F	KANSAI EL POWER
 NEE	NextEra Energy, Inc.
 HYSR	HyperSolar, Inc.
 CIGCF	Companhia Energtica de Minas Gerais S.A.
-
 VLTSA.PA	Voltalia
 TE	TECO Energy, Inc.
 JEL.L	Jersey Electricity plc
@@ -3764,7 +3753,6 @@ ORR.F	CHINA PWR NEW ENERG
 DTE	DTE Energy Company
 EDN	Empresa Distribuidora y Comercializadora Norte S.A.
 EBR	Centrais Eltricas Brasileiras S.A. - Eletrobras
-
 ETR	Entergy Corporation
 PPL	PPL Corporation
 ELI.BR	Elia System Operator SA
@@ -3772,7 +3760,6 @@ SSOL	Sunvalley Solar, Inc.
 NRN.MU	XCEL ENERGY 
 ERJ.AX	Enerji Ltd
 TRN.MI	TERNA - Rete Elettrica Nazionale Societ per Azioni
-
 EE	El Paso Electric Co.
 SCG	SCANA Corp.
 KSK.NS	KSK Energy Ventures Limited
@@ -3842,7 +3829,6 @@ XCN.DU	CLARION CO LTD
 0669.HK	Techtronic Industries Company Limited
 HOD.F	HOSIDEN
 HNL.DE	Dr. Hnle AG
-
 KYW.MU	SKYWORTH DIGITAL
 KYW.F	SKYWORTH DIGITAL
 UEIC	Universal Electronics Inc.
@@ -3930,7 +3916,6 @@ RTV.BE	YOUR FAMILY ENTERT
 1009.HK	INT'L ENT
 XHNA.SG	Hong Kong Television Network Limited
 FIM.PA	F. Marc de Lacharrire (Fimalac) S.A.
-
 0200.HK	Melco International Development Ltd.
 KHYATI.BO	Khyati Multimedia Entertainment Ltd.
 TNM1.F	TECHNICOLOR RGPT
@@ -4010,7 +3995,6 @@ ADM	Archer-Daniels-Midland Company
 BG	Bunge Limited
 STEV	Stevia Corp.
 NRX.PA	Naturex Socit Anonyme
-
 ZVF.F	INDOFOOD AGRI RES
 552.SI	Qian Hu Corporation Limited
 F34.SI	Wilmar International Limited
@@ -4021,7 +4005,6 @@ NVAV.F	CHAROEN POKP NVDR
 OMEAG.BO	Omega Ag-Seeds (Punjab) Ltd.
 OSW.SG	BAKRIE SUMATERA PL
 SIP.BR	Socit Internationale de Plantations et de Finance
-
 ELD.AX	Elders Limited
 QPJ.BE	KEWPIE CORP
 NBP.L	Narborough Plantations PLC
@@ -4122,7 +4105,6 @@ KIK.F	KIKKOMAN CORP
 Z1L.F	LEROY SEAFOOD 
 Y03.SI	Yeo Hiap Seng Limited
 NESR.DE	Nestl S.A.
-
 DVO.L	Devro plc
 C7Y.SG	CHINA YURUN FOOD GP
 SAFM	Sanderson Farms, Inc.
@@ -4147,7 +4129,6 @@ ZO1.DU	ZOOPLUS
 8269.HK	WEALTH GLORY
 SABE.PA	Sabeton SA
 HERDEZ.MX	Grupo Herdez,Sociedad Annima Burstil de Capital Variable
-
 TATACOFFE.NS	Tata Coffee Ltd.
 D03.SI	Del Monte Pacific Limited
 PBH.TO	Premium Brands Holdings Corporation
@@ -4169,7 +4150,6 @@ LANC	Lancaster Colony Corporation
 NSP.V	Naturally Splendid Enterprises Ltd.
 C7Y.BE	CHINA YURUN FOOD GP
 DUC.PA	Duc Socit Anonyme
-
 KYGA.L	Kerry Group plc
 PF	Pinnacle Foods Inc.
 ZO1.SG	ZOOPLUS
@@ -4184,7 +4164,6 @@ INSAB.MX	Grupo Minsa S.A.B. de C.V.
 B	MamaMancini's Holdings, Inc.
 TPK.TO	Ten Peaks Coffee Company Inc
 Z1L.DE	Lery Seafood Group Asa
-
 KCPSUGIND.NS	KCP Sugar & Industries Corp Ltd.
 WILC	G. Willi Food-International Ltd.
 XYL.V	Xylitol Canada Inc.
@@ -4261,7 +4240,6 @@ WF	Woori Bank
 BBVA	Banco Bilbao Vizcaya Argentaria, S.A.
 BSBR	Banco Santander (Brasil) S.A.
 BFR	BBVA Banco Francs SA
-
 BBDO	Banco Bradesco S.A.
 DB	Deutsche Bank AG
 CIB	Bancolombia S.A.
@@ -4374,7 +4352,6 @@ NCLIND.BO	NCL Industries Limited
 JENSONIC.BO	Jenson & Nicholson (India) Limited
 NCS	NCI Building Systems Inc.
 VMMA.PA	VM Matriaux
-
 APOG	Apogee Enterprises, Inc.
 SHREECEM.BO	Shree Cement Limited
 WIB.DE	Wienerberger AG
@@ -4492,7 +4469,6 @@ K1Q.SI	T T J Holdings Limited
 F1E.SI	Low Keng Huat (Singapore) Limited
 QF6.SI	Swee Hong Limited
 OCI1.DE	Actividades de Construccin y Servicios, S.A.
-
 TKK1.SG	TAISEI
 LDYA.F	MURRAY & ROB HLDGS
 VASCONEQ.NS	Vascon Engineers Ltd
@@ -4598,7 +4574,6 @@ TDC.V	Tyhee Gold Corp.
 GSE.V	Goldspike Explorations Inc.
 XGC.F	CROCODILE GOLD
 WFP.V	enCore Energy Corp.
-
 TLR.V	Teslin River Resources Corp.
 RNY.F	YAMANA GOLD
 VVI.V	Valencia Ventures Inc.
@@ -4607,7 +4582,6 @@ TAM.AX	Tanami Gold NL
 THM	International Tower Hill Mines Ltd.
 HMY	Harmony Gold Mining Company Limited
 EGI	Entre Gold Inc.
-
 OSTO	Original Sixteen to One Mine, Inc.
 SAND	Sandstorm Gold Ltd.
 EDGA.MU	GOLD FIELDS
@@ -4939,7 +4913,6 @@ AHOB.DE	Koninklijke Ahold N.V.
 TSCO.L	Tesco PLC
 PJP.F	X5 RTL SP GDR REG-S
 CO.PA	Casino, Guichard-Perrachon Socit Anonyme
-
 S6M.DU	SEVEN & I HDGS
 CBD	Companhia Brasileira de Distribuicao
 WN.TO	George Weston Limited
@@ -4998,7 +4971,6 @@ ATHN	athenahealth, Inc.
 VHGI	VHGI Holdings, Inc.
 IS8.DE	Ifa Systems Ag
 DIGP	DigiPath Corp
-
 TCEC	TransCoastal Corporation
 CGM.PA	Cegedim SA
 COO.AX	Corum Group Limited
@@ -5145,7 +5117,6 @@ DYII	Dynacq Healthcare Inc.
 CCM	Concord Medical Services Holdings Limited
 KAN.DU	MARSEILLE-KLINIKE N
 RHK.DE	Rhn-Klinikum Aktiengesellschaft
-
 L53.F	LIFE HEALTH GRP
 FME.DE	Fresenius Medical Care AG & Co. KGAA
 VRT.AX	Virtus Health Limited
@@ -5277,7 +5248,6 @@ USO.V	US Oil Sands Inc.
 NE.V	Nextraction Energy Corp.
 HN.V	High North Resources Ltd.
 QGEP3.SA	QGEP Participaes S.A.
-
 SLK.V	Silk Road Energy Inc.
 C68.SI	Mirach Energy Limited
 TPL.TO	Tethys Petroleum Limited
@@ -5740,7 +5710,6 @@ HDS	HD Supply Holdings, Inc.
 DXPE	DXP Enterprises, Inc.
 GWW	W.W. Grainger, Inc.
 LFRC.PA	France-Chauffage Socit Anonyme
-
 OMH.AX	OM Holdings Limited
 NOV.V	NovX21 Inc.
 JOR.V	Jourdan Resources, Inc.
@@ -6151,7 +6120,6 @@ OI8.F	INSPIRATION MINING
 GMO	General Moly, Inc.
 UEC	Uranium Energy Corp.
 GMEXICOB.MX	Grupo Mxico S.A.B. de C.V.
-
 OLG.F	SAINT-GOBAIN OBERL.
 D.V	Midland Exploration Inc.
 LYC.AX	Lynas Corporation Limited
@@ -6272,7 +6240,6 @@ KDI.V	Kennady Diamonds Inc.
 ROT.V	Rotation Minerals Ltd.
 8GC.SG	GLENCORE
 BVN	Compaa de Minas Buenaventura S.A.A.
-
 FMSA	FMSA Holdings Inc.
 WPX.TO	Western Potash Corp.
 GNI	Great Northern Iron Ore Properties
@@ -6578,7 +6545,6 @@ YOS.SG	CYCOS
 HCI.TO	Hartco, Inc.
 ACN	Accenture plc
 KEY.PA	Keyrus Socit Anonyme
-
 ZGY.BE	FIDELITY NATIONAL
 UIS	Unisys Corporation
 Q6IA.F	QIHOO 360 ADS-A
@@ -6647,7 +6613,6 @@ VISESHIN.BO	Visesh Infotecnics Ltd
 ETEC	Emtec, Inc.
 QIHU	Qihoo 360 Technology Co. Ltd.
 AGIS.PA	Ymagis Socit Anonyme
-
 UBIC	UBIC, Inc.
 RDWR	Radware Ltd.
 RTC.F	REALTECH
@@ -6782,7 +6747,6 @@ FENG	Phoenix New Media Limited
 NNNC.SG	TENCENT HLDGS
 TV0.DU	TRAVEL VIVA 
 LNEO.PA	Nocom Multimedia SA
-
 YHO.BE	YAHOO
 TWTR34.SA	Twitter, Inc.
 GOOG	Google Inc.
@@ -6936,7 +6900,6 @@ NMR	Nomura Holdings, Inc.
 LUK	Leucadia National Corporation
 0279.HK	FREEMAN FIN
 PAOR.PA	Paris Orlans S.C.A.
-
 T2G.BE	TRADEGATE
 QST.AX	Quest Investments Limited
 JMFINAN.BO	JM Financial Limited
@@ -7012,7 +6975,6 @@ RITN.F	RICHEMONT N
 CHOO.L	Jimmy Choo PLC
 BRBY.L	Burberry Group plc
 RMS.PA	Herms International Socit en commandite par actions
-
 GJF.F	ZHONG FA ZHAN HLDGS
 0860.HK	MING FUNG JEWEL
 0116.HK	Chow Sang Sang Holdings International Limited
@@ -7184,7 +7146,6 @@ GDL.TO	Goodfellow Inc.
 PCL	Plum Creek Timber Co. Inc.
 QXP1.F	NORBORD
 SIPH.PA	Socit Internationale de Plantations d'Hvas Socit Anonyme
-
 WHC.SG	WEYERHAEUSER REIT
 0094.HK	Greenheart Group Limited
 DEL	Deltic Timber Corporation
@@ -7251,7 +7212,6 @@ NVPE.F	THAI AIRWAYS NVDR
 ZNH.BE	CHINA SOUTH SP ADR
 AFR.SG	AIR FRANCE - KLM
 VLRS	Controladora Vuela Compaa de Aviacin, S.A.B. de C.V.
-
 IAG.L	International Consolidated Airlines Group, S.A.
 EIF.TO	Exchange Income Corporation
 SAVE	Spirit Airlines, Inc.
@@ -7260,7 +7220,6 @@ YPFD.BA	YPF S.A.
 LNG.AX	Liquefied Natural Gas Limited
 RRMS	Rose Rock Midstream, L.P.
 PETR4.SA	Petrleo Brasileiro S.A. - Petrobras
-
 PESA.BA	Petrobras Argentina SA
 TGRO	Tiger Oil and Energy, Inc.
 XOM.MX	Exxon Mobil Corporation
@@ -7410,7 +7369,6 @@ GB	Greatbatch, Inc.
 ACAR	ActiveCare, Inc.
 KTWO	K2M Group Holdings, Inc.
 STNT.PA	STENTYS Socit anonyme
-
 PHM.V	Patient Home Monitoring Corp.
 RMD	ResMed Inc.
 VICA	HCi VioCare
@@ -7680,7 +7638,6 @@ FMI	Foundation Medicine, Inc.
 TEAR	TearLab Corporation
 AFX.MU	CARL ZEISS MEDITEC
 ALIPS.PA	Qiagen Marseille Socit Anonyme
-
 OXIS	OXIS International Inc.
 IPK.F	QIAGEN MARSEILLE
 PUS.DE	PULSION Medical Systems SE
@@ -7778,7 +7735,6 @@ VMI	Valmont Industries, Inc.
 HIIT	HII Technologies, Inc.
 LI	Mueller Industries Inc.
 LFTC.PA	Forges de Trie-Chteau Socit Anonyme
-
 EA.SG	MINEBEA
 NSK.SG	NSK LTD
 GHM	Graham Corporation
@@ -7820,7 +7776,6 @@ BAC.MX	Bank of America Corporation
 BNS.MX	The Bank of Nova Scotia
 OAKV	Oak View National Bank
 CRTO.PA	Caisse Rgionale de Crdit Agricole Mutuel de La Touraine et du Poitou
-
 BHBK	Hyde Park Bancorp, MHC
 FBNK	First Connecticut Bancorp, Inc.
 FSRA.BE	FIRSTRAND
@@ -7854,7 +7809,6 @@ NBG	National Bank of Greece S.A.
 BBVA.MX	Banco Bilbao Vizcaya Argentaria, S.A.
 HBC2.MU	HSBC HLDGS SP ADR
 PEL.MI	Banca Popolare dell'Etruria e del Lazio - Societ Cooperativa
-
 TFBF.DU	KASIKORNBANK -F-
 OFG	OFG Bancorp
 CM.TO	Canadian Imperial Bank of Commerce
@@ -8045,7 +7999,6 @@ WB7.F	WAHANA OTTOMITRA
 HCG.TO	Home Capital Group Inc.
 KP.TO	MCAN Mortgage Corp.
 LHBB.PA	Financiere Hoche Bains-Les-Bains Socit Anonyme
-
 EFC	Ellington Financial LLC
 RLN	Marlin Business Services Corp.
 IMH	Impac Mortgage Holdings Inc.
@@ -8173,7 +8126,6 @@ JINDRILL.NS	Jindal Drilling & Industries Limited
 XBOR	Cross Border Resources, Inc.
 ONGC.NS	Oil and Natural Gas Corp. Ltd.
 PBR-A	Petrleo Brasileiro S.A. - Petrobras
-
 DO	Diamond Offshore Drilling, Inc.
 TTN.AX	Titan Energy Services Limited
 HENC	Holloman Energy Corporation
@@ -8202,7 +8154,6 @@ SDRL	SeaDrill Limited
 FORC	Force Minerals Corporation
 OMV.F	OMV 
 HK	Halcn Resources Corporation
-
 PTEN	Patterson-UTI Energy Inc.
 EGYH	Energy Holdings International, Inc.
 CEU.TO	Canadian Energy Services & Technology Corp.
@@ -8662,7 +8613,6 @@ KAO.SG	KAO
 HEN3.BE	HENKEL VZ
 KAO.DU	KAO
 LTRC.PA	Laboratoire les 3 Chnes
-
 PGHH.NS	Procter & Gamble Hygiene and Health Care Limited
 KAO.F	KAO
 31V.BE	VINDA INTL HLDGS
@@ -8685,7 +8635,6 @@ REV	Revlon, Inc.
 5ER.SI	Best World International Limited
 6BK.MU	BAWANG INTERNATIONA
 EL	The Este Lauder Companies Inc.
-
 SHD.SG	SHISEIDO
 NUVI	Emo Capital Corp.
 HLF	Herbalife Ltd.
@@ -8877,11 +8826,9 @@ AWH	Allied World Assurance Company Holdings, AG
 KMPR	Kemper Corporation
 SLW.DE	Swiss Life Holding AG
 UV2.DE	Mnchener Rckversicherungs-Gesellschaft Aktiengesellschaft
-
 PIH	1347 Property Insurance Holdings, Inc.
 RNR	RenaissanceRe Holdings Ltd.
 UV2.MI	Mnchener Rckversicherungs-Gesellschaft Aktiengesellschaft
-
 ZFIN.DE	Zurich Insurance Group AG
 VR	Validus Holdings, Ltd.
 HIG	The Hartford Financial Services Group, Inc.
@@ -9071,7 +9018,6 @@ AYS	JW Mays Inc.
 OUT	Outfront Media Inc.
 BIW.DU	KWG KOMMUNALE WOHNE
 LSIC.PA	Financiere Sicomax Socit Anonyme
-
 HF	HFF, Inc.
 CANN	Advanced Cannabis Solutions, Inc.
 HZJ.MU	HEIWA REAL ESTATE
@@ -9138,7 +9084,6 @@ QS3.SG	SOLOCAL GROUP
 OPG.AX	OPUS Group Limited
 Y.TO	Yellow Media Limited
 VITA.MI	Vita Societ Editoriale S.p.A.
-
 FP.TO	FP Canadian Newspapers Limited Partnership
 NYT.DU	NEW YORK TIMES -A-
 SANDESH.NS	The Sandesh Limited
@@ -9381,7 +9326,6 @@ OKPLA.BO	OK Play India Limited
 WGF1.BE	WILLIAMS GP HD G-CT
 EDL.PA	Euro Disney SCA
 TRI.PA	Trigano Socit Anonyme
-
 NKN.F	NIKON CORP
 SHOW3.SA	T4F Entretenimento S.A.
 LANT.PA	Antipodes Voyages
@@ -9854,7 +9798,6 @@ EFSC	Enterprise Financial Services Corp.
 SLRK	Solera National Bancorp, Inc.
 ALK	Alaska Air Group, Inc.
 GOL	GOL Linhas Areas Inteligentes S.A.
-
 SKYW	SkyWest Inc.
 CPA	Copa Holdings SA
 LUV	Southwest Airlines Co.
@@ -11519,7 +11462,6 @@ VIZ.F	VI(Z)RT
 EVOL	Evolving Systems Inc.
 GKS.MU	GK SOFTWARE
 PROL.PA	Prologue Socit Anonyme
-
 FJH.BE	MSG LIFE AG
 CRO.L	Micro Focus International plc
 0800.HK	A8 NEW MEDIA
@@ -11641,7 +11583,6 @@ DYNV	Dynamic Ventures Corporation
 JEC	Jacobs Engineering Group Inc.
 ENG	ENGlobal Corp.
 GRAM	Graa y Montero SAA
-
 EGL	Engility Holdings, Inc.
 VSEC	VSE Corp.
 TTEK	Tetra Tech Inc.
@@ -11668,7 +11609,6 @@ RPID	Spot Mobile International Ltd.
 CHA	China Telecom Corp. Ltd.
 KT	KT Corp.
 TEF	Telefnica, S.A.
-
 PHI	Philippine Long Distance Telephone Company
 PHI.V	Philippine Metals Inc.
 ORAN	Orange
@@ -11936,7 +11876,6 @@ CREG	China Recycling Energy Corporation
 WMT.V	West Mountain Environmental Corp.
 IDSA	Industrial Services of America, Inc.
 SCHP.PA	Sch Environnement SA
-
 NOE.AX	Novarise Renewable Resources International Limited
 VTNR	Vertex Energy, Inc.
 ZEF.F	ZHONGDE WASTE TECH
@@ -11986,7 +11925,6 @@ SLNX	Solanbridge Group, Inc.
 SRCL	Stericycle, Inc.
 DAR	Darling Ingredients Inc.
 COM.PA	Constructions Industrielles de la Mditerrane Socit Anonyme
-
 VVDH.BE	VEOLIA ENV SP. ADR
 AWC.SG	AMER WTR WORKS
 WTR	Aqua America Inc.
@@ -12015,7 +11953,6 @@ PAOS	Precision Aerospace Components, Inc.
 NWT.AX	NewSat Limited
 LL6.F	MTN GROUP
 TNE2.SG	Telefnica, S.A.
-
 RTL.F	ROSTELECOM SP ADR
 REF.AX	Reverse Corp Limited
 0524.HK	e-Kong Group Limited
@@ -12116,7 +12053,6 @@ TNET.BR	Telenet Group Holding NV
 TGT.DE	Telegate AG
 NTLS	NTELOS Holdings Corp.
 ALKEY.PA	Keyyo Socit Anonyme
-
 ZCH.BE	CHINA TELECOM -H-
 4GK.BE	AXTEL CPO
 AMX	America Movil S.A.B. de C.V.
@@ -12144,7 +12080,6 @@ NTT.F	NIPPON TEL&TEL;
 CWLR.MU	CABLE & WIRE COMM
 VIP	VimpelCom Ltd.
 TDE.L	Telefnica, S.A.
-
 TKC	Turkcell Iletisim Hizmetleri AS
 KTC.SG	KT SP.ADR
 SFT.DE	SoftBank Corp.
@@ -12160,9 +12095,7 @@ G11.SI	Global Tech (Holdings) Limited
 OGM1.BE	COGENT COMM HLDG
 FNTN.DE	freenet AG
 VVU.DE	Vivendi Socit Anonyme
-
 VIV.PA	Vivendi Socit Anonyme
-
 CN.DU	NTT DOCOMO
 AXTELCPO.MX	Axtel S. A.. B. De CV
 2342.HK	COMBA
@@ -12257,7 +12190,6 @@ IEAM	Industrial Enterprises of America, Inc.
 XTP.BE	SINO
 JDSHF	Jardine Strategic Holdings Limited
 QSI.SG	SAG GEST - Solues Automvel Globais, SGPS, SA
-
 ZODFF.PK	ZODIAC SA
 UEPEP	Union Electric Company
 VLS.L	VELOCYS
@@ -12297,7 +12229,6 @@ APXZF	APPTIX ASA
 DJM15-C.CBT	
 VERIZ.AS	VERIZON COMM 
 VIVEF	Vivendi Socit Anonyme
-
 BLH	BlackRock New York Municipal 2018 Term Trust
 FVBI11B.SA	FII VBI 4440-CI  ER  MB
 NFDSD.PK	NEW FOUND SHRIMP INC
@@ -12532,7 +12463,6 @@ VXM-B.TO	F A MORNINGSTAR INTL VALUE IDX
 SOAD	My Social Income, Inc.
 TNEYD.PK	TAMARACK VALLEY ENGY
 ACSAY	Actividades de Construccin y Servicios, S.A.
-
 2608.TW	T JOIN TRANSPORTAT TWD10
 SPPRO	Supertel Hospitality, Inc.
 GHDN.BE	BRAINSTORM CELL
@@ -12626,7 +12556,6 @@ CMGMF	Chemring Group plc
 WJAVF	Westjet Airlines Ltd.
 RCCMF	Nippon Dragon Resources Inc.
 CGUIF	Casino, Guichard-Perrachon Socit Anonyme
-
 0153.HK	CHINA SAITE
 RCZRF	Rio Cristal Resources Corporation
 LCGP@NG.JK	Eureka Prima Jakarta Tbk. (Nego
@@ -12867,7 +12796,6 @@ OMVKY	OMV Aktiengesellschaft
 7S8.F	SITC INTL HLDGS
 SUWN	Sunwin Stevia International, Inc.
 TVAF	Mtropole Tlvision SA
-
 AMDWF	Amada Co. Ltd.
 HRZL	Horizon Lines, Inc.
 071055.KS	KIH(1P)
@@ -13332,7 +13260,6 @@ SGKBF	St.Galler Kantonalbank AG
 003600.KS	SK Holdings Co., Ltd.
 TRRU	Torch Energy Royalty Trust
 RNSDF	Renault Socit Anonym
-
 FRCOF.PK	FAST RETAILING CO LT
 1589.KL	ISKANDAR WATERFRONT CITY BERHAD
 YTHL.PK	YINGTUI HOLDINGS.
@@ -13679,7 +13606,6 @@ KRISHNA.BO	KRISHNA VENTURES LIMITED
 ILADF	ILIAD AFRICA LTD
 RGRP	RBS Rogers Enhanced Precious Metals ETN
 TVOG	Turner Valley Oil & Gas, Inc.
-
 NNX.V	Nickel North Exploration Corp.
 ARGS	Argos Therapeutics, Inc.
 TSFF.PK	MITSUI FUDOSAN CO LT
@@ -13843,7 +13769,6 @@ WELLD	ForU Holdings, Inc.
 GENE	Genetic Technologies Limited
 XNC2O.BA	
 BBR.SG	Brgerliches Brauhaus Ravensburg - Lindau Aktiengesellschaft
-
 YTHL	Yingtui Holdings Ltd.
 2063.TWO	SHEH KAI PRECISION TWD10
 1363.HK	CTEG
@@ -13855,7 +13780,6 @@ NKOSF	Nikos Explorations Ltd.
 KLBAY	Klabin S.A.
 XCNGF.PK	XCHANGING PLC
 SECVY	Sch Environnement SA
-
 KNBWF	Kirin Holdings Company, Limited
 CHKVZ	CHESAPEAKE ENERGY
 IIFLFIN-N4.NS	12% Sec Rede NCD Opt III
@@ -13882,7 +13806,6 @@ ORSCY	Orascom Construction Industries Company
 TSRYY	Treasury Wine Estates Limited
 QALB	Qualibou Energy, Inc.
 TERRF	TERNA - Rete Elettrica Nazionale Societ per Azioni
-
 KVCPF	KVK Corporation
 JLM.SG	JERICHO OIL 
 DPG	Duff & Phelps Global Utility In
@@ -14115,7 +14038,6 @@ RTBRF	Restaurant Brands New Zealand Ltd.
 005180.KS	Binggrae Co., Ltd.
 KENS.PK	KENILWORTH SYSTEMS C
 AMKAF	A.P. Mller - Mrsk A/S
-
 KIORQ	KiOR, Inc.
 EMMLF.PK	WEST AFRICAN
 SHNVF	Intouch Holdings Public Company Limited
@@ -14479,7 +14401,6 @@ TMEEF	Tomen Electronics Corporation
 NMGL.PK	NORTH AMERICAN GOLD
 YKF17-1.CBT	
 WRTBY	Wrtsil Oyj Abp
-
 VDOLEASEQF.BO	
 VTXPF.PK	VICTREX PLC
 ICHBF	Industrias CH, SAB de CV
@@ -14991,7 +14912,6 @@ SIDO.JK	INDUSTRI JAMU & FARMASI SIDO MU
 CVBK	Central Virginia Bankshares Inc.
 SAAFF	Saras S.p.A.
 NAPRF	Naspers Limited
-
 NOM-PC	Nuveen Missouri Premium Income 
 KVLQF	Kivalliq Energy Corp.
 DIIBF	Dorel Industries Inc.
@@ -15822,7 +15742,6 @@ FUR.AS	FUGRO
 APA.AX	APA GROUP STAPLED
 0B9.SG	BOOMERANG OIL
 NSRGY	Nestl S.A.
-
 XOA1.SG	Sonaecom, S.G.P.S., S.A.
 NSKO.TA	NISKO INDUST
 RHM.L	RES HLDG MNGT
@@ -15910,7 +15829,6 @@ VEGPF.PK	VECTURA GROUP PLC
 1181.HK	TANG PALACE
 GETI-B.ST	GETINGE -B-
 KLKNF	Klckner & Co SE
-
 UE	Blackrock MuniHoldings Quality 
 RANEENGINE.BO	RANE ENGINE VALVE LTD.
 B9I.BE	OI SP ADR PFD
@@ -16556,7 +16474,6 @@ YCKM.OB	YELLOWCAKE MINING INC
 QTMR	Quantum MRI Inc.
 V39A.SG	CHINA ADV CONSTRUCT
 CRQDF	Crdito Real, S.A.B. de C.V., Sociedad Financiera De Objeto Mltiple, Entidad No Regulada
-
 VOR1.F	BC MOLY
 ZNTH.OB	CHINA TIANFEIHONG WINE, INC.
 OGRMF	OrganiGram Holdings Inc.
@@ -16953,7 +16870,6 @@ AAF1.BE	WAFERGEN BIO-SYS
 0948-OL.HK	Z-OBEE
 GFY	Western Asset Variable Rate Strategic Fund Inc.
 GUZOF	Grupo Herdez,Sociedad Annima Burstil de Capital Variable
-
 WTLC	Western Metals Corporation
 TDE	Telephone & Data Systems Inc.
 CFRUY	Compagnie Financiere Richemont SA
@@ -17060,7 +16976,6 @@ CNLMU	CB Pharma Acquisition Corp.
 LEAF.L	LEAF CLEAN ENERGY
 IAXFF	Desert Star Resources Ltd.
 PIEJF	Paris Orlans S.C.A.
-
 NYRSY	Nyrstar NV
 NF04Q.BA	BAPRO MANDS Y NEG CP 25/05/16 (
 X1X.SG	XSUNX
@@ -17131,7 +17046,6 @@ BK-PC	Bank Of New York Mellon Corpora
 WELLWININD.BO	WELLWIN INDUSTRY LTD.
 TZMI.TA	ZMIHA INVT HOUSE
 ACSAF	Actividades de Construccin y Servicios, S.A.
-
 EDVMF.PK	ENDEAVOUR MINING COR
 NOVE.ST	NOVESTRA
 TUB.MC	TUBACEX 
@@ -17206,7 +17120,6 @@ BC	Citigroup Inc. 3% Minimum Coupo
 NWF.BE	WESTERN FOREST PROD
 SOCI.JK	Soechi Lines Tbk.
 GUZBY	Grupo Herdez,Sociedad Annima Burstil de Capital Variable
-
 EC.V	Ecometals Ltd.
 FFK.BE	WESTERN DESERT
 GKR-H.V	GREENOCK RESOURCES INC
@@ -17563,7 +17476,6 @@ JRCC	James River Coal Co.
 BKUT	Bank of Utica
 3419.TW	WHA YU INDUSTRIAL TWD10
 AESAY	AES Tiet S.A.
-
 ERMAF.PK	ERAMET ORDS FGN
 VWLTF.PK	VTION WIRELESS TECHN
 YYINE	Yayi International Inc.
@@ -17770,7 +17682,6 @@ RSEL.TA	RSL ELECTRONICS
 PACV	Pacific Ventures Group, Inc.
 SLNLY	Stella International Holdings Ltd.
 WRTBF	Wrtsil Oyj Abp
-
 WSBHF	Whistler Blackcomb Holdings Inc.
 HBNNF	HorizonsBetaPro NYMEX NatrlGas Bear+ ETF
 STGN.SW	STARRAG GROUP HD N
@@ -17786,7 +17697,6 @@ XTN-L4-97-1.AX
 EME	MeeMee Media Inc.
 3669-OL.HK	YONGDA AUTO
 VIVHY	Vivendi Socit Anonyme
-
 TYFDL	TYSON FOODS INC
 VST.V	Vast Exploration Inc.
 SWIR	Sierra Wireless Inc.
@@ -18017,7 +17927,6 @@ EAE	Entergy Arkansas, Inc.
 JLMC	JLM Couture Inc.
 JEXYY	Jiangsu Expressway Co. Ltd.
 RLYNF	Rallye Socit Anonyme
-
 TA-PJ.TO	TRANSALTA CORP PREF SERIES G
 DMYD-B.ST	DIAMYD MEDICAL -B-
 SHCAF.PK	SHARP CORP (OSAKA)
@@ -18188,7 +18097,6 @@ JMPC	JMP Group Inc.
 SIOPF	Shimao Property Holdings Ltd.
 033780.KS	KT&G; Corporation
 TEZNY	TERNA - Rete Elettrica Nazionale Societ per Azioni
-
 PROTE	Proteus FIM C Priv
 GMGLF	Arrowstar Resources Ltd
 FD	Macquarie/First Trust Global Infrastructure/Utilities Dividend & Income Fund
@@ -18412,7 +18320,6 @@ FRBE	Four Rivers BioEnergy, Inc.
 ORADS.PA	ORAPI PSR 14  
 XJOQMK-A.A	MINI L
 KCDMF	Kimberly-Clark de Mxico, SAB de CV
-
 CWPWF	China Windpower Group Limited
 TCNO3F.SA	TECNOSOLO   -ON
 JSDA.PK	JONES SODA CO
@@ -18561,7 +18468,6 @@ NYUKF	Nippon Yusen Kabushiki Kaisha
 ZAZUF.PK	ZAZU METALS CORP
 STKS.PK	THE ONE GROUP HOSPIT
 ASOZY	Asseco Poland Splka Akcyjna
-
 ZSAMPKTR.BO	SAMPARK TRADING & FINANCE LTD.
 VEGYF	Virginia Energy Resources Inc.
 TIHC	TITANIUM HEALTHCARE
@@ -18704,7 +18610,6 @@ ZOE.F	ZOETIS-A
 BPS	BlackRock Pennsylvania Strategic Municipal Trust Fund
 INB	Cohen & Steers Global Income Bu
 NSRGF	Nestl S.A.
-
 ZBRA@NG.JK	Zebra Nusantara Tbk (Negotiated
 PHXCF	Phoenix Canada Oil Co. Ltd.
 LNHF	MIDLAND HOLDINGS
@@ -18766,13 +18671,11 @@ SMACR	Sino Mercury Acquisition Corp.
 TTYP	Trinity Petroleum Trust
 NBG-PA	National Bank of Greece SA Spon
 ENGGY	Enags, S.A.
-
 RNKLF	Royal Nickel Corporation
 XEL-PG	
 KYE	Kayne Anderson Total Energy Ret
 WHCI.PK	W HOLDING CO INC NEW
 PBR	Petrleo Brasileiro S.A. - Petrobras
-
 JLM.F	JERICHO OIL 
 LVLEF	Lynden Energy Corp.
 WEBNF	Westpac Banking Corporation
@@ -18799,7 +18702,6 @@ ZMMDF	Zoommed Inc.
 VHUB.PK	VAPOR HUB INTERNAT
 JNEXF.PK	JUNEX INC
 HVRRY	Hannover Rck SE
-
 ERBB	American Green, Inc.
 HR1A.L	Hazel Renewable Energy VCT 1 A
 GER	Goldman Sachs MLP Energy Renais
@@ -18863,7 +18765,6 @@ YCC.BE	ATLANTICUS HLDGS
 ARTA.JK	Arthavest Tbk
 ALSMY	Alstom SA
 PPSF	Peoples-Sidney Financial Corporation
-
 NBPVF	NB PRIVATE EQUITY
 ITI.JK	Mitra Investindo Tbk.
 TSRX	Trius Therapeutics, Inc.
@@ -18915,7 +18816,6 @@ SGFEF	Siegfried Holding AG
 JCYCF.PK	JARDINE CYCLE & CARR
 UOVEY	United Overseas Bank Limited
 BLHEY	Bloise Holding AG
-
 1VO.BE	VANOIL ENERGY
 WMCB.PK	WILLAMETTE CMTY BNK
 ONMDQ.PK	VERTICAL HEALTH COM
@@ -18926,7 +18826,6 @@ PPJE	PPJ Healthcare Enterprises, Inc.
 IOGIF	Ironhorse Oil & Gas Inc.
 IW	Eaton Vance Michigan Municipal 
 KCDMY	Kimberly-Clark de Mxico, SAB de CV
-
 FT	Franklin Universal Trust Common
 NZH	Nuveen California Dividend Advantage Municipal Fund 3
 HPDLF	Hopson Development Holdings Ltd.
@@ -19078,7 +18977,6 @@ U2V.SI	Wilmar.ES.1404
 NCGDF	North Country Gold Corp.
 GPHOF	Graphite One Resources Inc.
 TKHVY	Trk Hava Yollari A.O.
-
 XYNH	Xynergy Holdings, Inc.
 ENMD	EntreMed Inc.
 YCU.F	YUME
@@ -19558,7 +19456,6 @@ BRTX	BioRestorative Therapies, Inc.
 LOTE	Lot78, Inc.
 DHTMF.PK	DAIHATSU MOTOR
 GCTAF	Gamesa Corporacin Tecnolgica S.A.
-
 AGP.L	ASIAN GROWTH PROP
 YPFSF.PK	YPF SOCIEDAD ANONIMA
 CG6A.BE	ORIENT VICTORY
@@ -20014,7 +19911,6 @@ SSPC	SpendSmart Networks, Inc.
 ODL.OL	ODFJELL DRILL
 ELEZF	Endesa SA
 RDEIY	Red Elctrica Corporacin S A.
-
 ATVK	ATVRockN
 ILVOF.PK	ILLOVO SUGAR
 WFMRF	Wolf Minerals Limited
@@ -20095,7 +19991,6 @@ SHWGY	Shandong Weigao Group Medical Polymer Co., Limited
 LNGLF	Liquefied Natural Gas Limited
 TELK	Telik Inc.
 KBGA.SG	Klner Brgergesellschaft Aktiengesellschaft
-
 TBNAF	TACHIBANA SHOKAI LTD
 KIMJF	Kilimanjaro Capital, LLC
 GMETP	GEOMET, INC.
@@ -20104,7 +19999,6 @@ JSMR@TN.JK	Jasa Marga (Persero) Tbk. (Cash
 BMDPY	Banca Monte dei Paschi di Siena S.p.A.
 QE2P.BE	U.S. SILV&GOLD;
 AKBLF	ALK-Abell A/S
-
 NXTDW	NXT-ID Inc.
 OGS	ONE Gas, Inc. Common Stock
 3402.TWO	WHOLETECH SYSTEM H TWD10
@@ -20116,7 +20010,6 @@ CXH	MFS Investment Grade Municipal Trust
 KLRGF	Keller Group plc
 XXL.AX	XIAOXIAO FPO
 LYSFF	Lery Seafood Group Asa
-
 GLOBALVECT-EQ.NS	GLOBAL VECTRA HELICORP LI
 NGM.SG	GIGAMON
 LPUSF	TYMAN PLC
@@ -20256,7 +20149,6 @@ WSEYF.PK	WELLSTAR ENERGY NEW
 NMSCA	Nutrition Management Services Company
 AUG.NZ	Augusta Capital Limited Ordinar
 ORPEF	ORPEA Socit Anonyme
-
 2818-OL.HK	X PING AN CRA50
 FRTD	Fortitude Group, Inc.
 E2:ER0.SI	KSH
@@ -20500,7 +20392,6 @@ NPEXF	Nippon Express Co. Ltd.
 IIREF.PK	ISHARES MSCI WORLD
 WDI.EX	WIRECARD
 SDNVY	Siderrgica Venezolana SIVENSA SA
-
 OMTDF	ORMAT INDS
 NTRO.PK	NITRO PETROLEUM INC
 KMTUF	Komatsu Ltd.
@@ -20825,7 +20716,6 @@ BIE	BlackRock Municipal Bond Investment Trust
 PPCMF.PK	PRETORIA PORTLAND CE
 CLACU	Capitol Acquisition Corp. II
 GMBXF	Grupo Mxico S.A.B. de C.V.
-
 ITCLF	INTERSPACE CO LTD
 LKWDF	Golden Secret Ventures Ltd.
 59M.DU	MS&AD; INSURANCE
@@ -20890,7 +20780,6 @@ CCOHF	China State Construction International Holdings Ltd
 V4S.BE	VESUVIUS
 SHO-PD	Sunstone Hotel Investors, Inc. 
 URGF	Mnchener Rckversicherungs-Gesellschaft Aktiengesellschaft
-
 NCB	Nuveen California Municipal Val
 BOPO	BioPower Operations Corporation
 GCWOF	Grupo Cementos de Chihuahua SAB de CV
@@ -21452,7 +21341,6 @@ GRYEF.PK	AU MIN AFRICA PTY
 BGFD.L	Baillie Gifford Japan Ord
 KOGMF	Kilo Goldmines Ltd.
 WLV.SG	Wrttembergische Lebensversicherung Aktiengesellschaft
-
 PXFG	Phoenix Footwear Group Inc.
 BSKP.SW	KB BASEL PS
 STFYF	Standard Food Corp.
@@ -22393,7 +22281,6 @@ CNCT	China Teletech Holding, Inc.
 TRLPF	Trimel Pharmaceuticals Corp.
 OCK1P.BA	CENTRO CARD S.A. VAR NT 27/08/2
 ECPCY	Estcio Participaes S.A
-
 KLMK	Klever Marketing, Inc.
 JCLLITD.BO	JCL LTD.
 ZKBPF	ZKB PALLADIUM
@@ -23099,7 +22986,6 @@ CGSXF	China TopReach Inc
 GLYYF	Glory Ltd.
 NPKAF	Nampak Limited
 USNZY	Usinas Siderrgicas de Minas Gerais S.A.
-
 OJU1.SG	ORAMED
 ZIGGF	Ziggo N.V.
 TIR.L	Tiger Resource Finance Ord
@@ -23615,7 +23501,6 @@ HVYB	Home Valley Bancorp Inc.
 NOATF	Legend Gold Corp.
 GRAMN.MX	GRANA Y MONT SP ADS
 NPSNY	Naspers Limited
-
 QCQ16-C.CMX	
 FRA	Blackrock Floating Rate Income 
 LANZ.PK	LANCER ORTHODONTIC
@@ -23799,7 +23684,6 @@ TROIF	Tri Origin Exploration Ltd.
 VTSI.PK	VIRTRA SYSTEMS INC
 JUB.SG	JUMBO INTERACT
 AMKBY	A.P. Mller - Mrsk A/S
-
 TGPN.BE	EUROPEAN URANIUM RS
 TSSI	TSS, Inc.
 NBH	Neuberger Berman Intermediate M
@@ -23946,7 +23830,6 @@ EBS.VI	ERSTE GROUP BANK
 ULTJ@TN.JK	Ultra Jaya Milk Industry & Trad
 TVE-R.V	
 CIG	Companhia Energtica de Minas Gerais S.A.
-
 NSARO	NSTAR Electric Company
 KRM-P.V	KRAMER CAPITAL CORP
 OBL.AS	UNIBAIL-RODAMCO
@@ -24141,7 +24024,6 @@ QPX.F	PAREX RES
 414921.VI	VOESTALPINE
 ATRA	Atara Biotherapeutics, Inc.
 URGY	Mnchener Rckversicherungs-Gesellschaft Aktiengesellschaft
-
 LUPE.ST	LUNDIN PETROL
 5053.KL	OSK HOLDINGS BHD
 RVRCD	IDM Mining Ltd.
@@ -24890,7 +24772,6 @@ DCGCF	DUNCASTLE GOLD
 CLAYF.PK	ISHARES 1-5 YEAR COR
 J7Z.SG	JAZZ PHARMACEUTICAL
 RVNY	MRV Engenharia e Participaes s.a.
-
 2468.HK	TRONY SOLAR
 JBFCY	Jollibee Foods Corp.
 ZKERARUB.BO	KERALA RUBBER & RECLAIMS LTD.
@@ -24962,7 +24843,6 @@ AY03.SG	ABENGOA OR14-B-
 WIA	Western Asset/Claymore Inflation-Linked Securities & Income Fund
 ZOSN	ZOSANO, INC
 DUERF	Drr Aktiengesellschaft
-
 BL4M4.BA	CHACO(PROVINCE OF) VAR TSY NT 2
 THLEF	Thales SA
 XLRM	XLR Medical Corp.
@@ -25325,7 +25205,7 @@ BMZ.MU	BML
 PMOIF	Premier Oil plc
 ONAVQ	OMEGA NAVIGATION
 TLW.DU	TIMELESS SOFTWARE
-ZA0.BE	CN ZHENGTONG:%s/[^[:alnum:][:punct:][:space:]]//gc
+ZA0.BE	CN ZHENGTONG:%s/[^[:alnum:][:punct:][:space:]]//gc
 CACGU	Chart Acquisition Corp.
 ELAMF.PK	ELAMEX SA DE CV CL
 LF.BO	MONEY MASTERS LEASING & FINANC
