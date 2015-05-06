@@ -39,7 +39,10 @@ data HistoricalQuote = HistoricalQuote {
         close  :: Float
         -- adjclose :: QuoteCurrency,
         -- volume   :: Int
-        } deriving (Show, Eq)
+        } deriving (Show)
+
+instance Eq HistoricalQuote where
+  x == y = symbol x == symbol y && date x == date y
 
 instance Ord HistoricalQuote where
   HistoricalQuote {date = d} <= HistoricalQuote {date = d2} = d <= d2

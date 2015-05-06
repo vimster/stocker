@@ -31,7 +31,8 @@ testQuotes :: [String]
 testQuotes = ["YHOO"]
 
 maximumPrice :: [Yahoo.HistoricalQuote] -> Float
-maximumPrice = maximum . map Yahoo.high
+maximumPrice [] = 0
+maximumPrice xs = maximum $ map Yahoo.high xs
 
 minimumPrice :: [Yahoo.HistoricalQuote] -> Float
 minimumPrice = minimum . map Yahoo.low
