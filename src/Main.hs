@@ -45,7 +45,6 @@ isQuoteOfInterest list =
   let latestData = maximumBy (compare `Func.on` Yahoo.date) list
       latestLow = Yahoo.low latestData
       dataWithoutLatest = filter (/= latestData) list
-  in latestLow > 1 && latestLow < maximumPrice dataWithoutLatest * 0.8
 
 
 ------------------------------------------------------------------------
