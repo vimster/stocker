@@ -98,8 +98,10 @@ sendEmail username password receivers quotes symbols = doSMTPSTARTTLS host $ \co
       else print "Authentication error."
   where subject = "Gefallene Kurse"
         body    = T.pack $ (headline++) $ intercalate "\n" $ map quoteText (Map.keys quotes)
-        quoteText q = "[" ++ q ++ "] " ++ sym q ++ " (-" ++ show (diff q) ++ "%): " ++ stockInfoUrl q
+        quoteText q = "[" ++ q ++ "] " ++ sym q ++ " (-" ++ show (diff q) ++ "%):\n \
+                        \Kurs: " ++ show (currentPrice q) ++ "\n" ++ stockInfoUrl q
         list k  = Map.findWithDefault [] k quotes
+        currentPrice k = truncate $ Yahoo.close $ last $ list k
         sym k  = Map.findWithDefault "" k symbols
         diff k  = truncate $ 100 - (minimumPrice (list k) * 100 / maximumPrice (list k))
 
