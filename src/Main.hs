@@ -88,7 +88,7 @@ host :: String
 host = "smtp.zoho.com"
 
 headline :: String
-headline = "Folgende Kurse sind in der letzten Woche um mehr als 20% gesunken:\n"
+headline = "Folgende Kurse sind in der letzten Woche um mehr als 12% gesunken:\n"
 
 sendEmail :: String -> String -> [String]-> Yahoo.QuoteMap -> Map.Map String String -> IO ()
 sendEmail username password receivers quotes symbols = doSMTPSTARTTLS host $ \conn -> do
@@ -98,8 +98,7 @@ sendEmail username password receivers quotes symbols = doSMTPSTARTTLS host $ \co
       else print "Authentication error."
   where subject = "Gefallene Kurse"
         body    = T.pack $ (headline++) $ intercalate "\n" $ map quoteText (Map.keys quotes)
-        quoteText q = "[" ++ q ++ "] " ++ sym q ++ " (-" ++ show (diff q) ++ "%):\n \
-                        \Kurs: " ++ show (currentPrice q) ++ "\n" ++ stockInfoUrl q
+        quoteText q = "[" ++ q ++ "] " ++ sym q ++ " (-" ++ show (diff q) ++ "%, " ++ show (currentPrice q) ++ "):\n" ++ stockInfoUrl q
         list k  = Map.findWithDefault [] k quotes
         currentPrice k = truncate $ Yahoo.close $ last $ list k
         sym k  = Map.findWithDefault "" k symbols
@@ -112,7 +111,7 @@ main = do
   contents <- mapM readFile filePaths
   let symbols = parseTsv (head contents)
   putStr "symbol count: "
-  print (Map.size symbols)
+  print $ Map.size symbols
   yesterday <- addDays (-1) <$> fmap utctDay getCurrentTime
   config <- loadConfig
   username <- require config "email_user" :: IO String
