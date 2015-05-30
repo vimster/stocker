@@ -472,6 +472,7 @@ DPSI	Decisionpoint Systems, Inc.
 PAYC	Paycom Software, Inc.
 6O.F	BOLSAS Y MERCADOS
 BK	The Bank of New York Mellon Corporation
+JAN.DU	JAPAN ASIA INVT
 4WM.DE	World Markets AG
 CGC	MCG Capital Corporation
 FIG	Fortress Investment Group LLC
@@ -632,6 +633,8 @@ FEE1.SG	FEEDBACK
 0806.HK	VALUE PARTNERS
 EVR	Evercore Partners Inc.
 RAND	Rand Capital Corporation
+LVES.PA	Vestasia Limited
+KBCA.BR	KBC Ancora SCA
 AGF-B.TO	AGF Management Limited
 RAF.AX	Raffles Capital Limited
 0172.HK	Goldbond Group Holdings Limited
@@ -2183,7 +2186,9 @@ AUMA	AR Capital Acquisition Corp.
 0053.HK	Guoco Group Limited
 TXSO	Texas South Energy, Inc.
 1VS.DE	Zavarco Plc
+C3T.SI	Uni-Asia Holdings Limited
 LTNR	Loton Corp.
+CADT	DT Asia Investments Limited
 VLM.MU	METSO
 CADO5.BA	Carlos Casado S.A.
 VCMG	Veracity Management Global, Inc.
@@ -3096,6 +3101,7 @@ ANTH	Anthera Pharmaceuticals, Inc.
 ZYDEN.BO	Zyden Gentec Ltd.
 NATCAPSUQ.BO	Natural Capsules Ltd.
 ZENITHHE.BO	Zenith Healthcare Ltd
+PHRMASI.BO	Phaarmasia Limited
 AERI	Aerie Pharmaceuticals, Inc.
 ZSPH	ZS Pharma, Inc.
 JZHG	JinZangHuang Tibet Pharmaceuticals, Inc.
@@ -3391,6 +3397,7 @@ BN2.SI	Valuetronics Holdings Limited
 NICE.MI	Nice SpA
 WHR.F	WHIRLPOOL
 AT1.BE	PANASONIC
+0351.HK	Asia Energy Logistics Group Limited
 PHG	Koninklijke Philips N.V
 EDIG	e.Digital Corporation
 1195.HK	KINGWELL GROUP
@@ -3520,6 +3527,7 @@ GCLA.BA	Grupo Clarn S.A.
 NXWB.F	TWENTY-FIRST CENT-B
 SG	The Madison Square Garden Company
 NXW2.F	TWENTY-FIRST CDIS
+8173.HK	PAN ASIA MINING
 CMCSA	Comcast Corporation
 ERL.L	Merlin Entertainments plc
 TWX	Time Warner Inc.
@@ -3627,6 +3635,7 @@ KRITINUT.BO	Kriti Nutrients Ltd
 C7.SI	Yamada Green Resources Limited
 NBPO.L	New Britain Palm Oil Limited
 ALCO	Alico Inc.
+Z01.SI	Zagro Asia Limited
 SCL.NZ	Scales Corporation Limited
 YZA.MU	ARYZTA N
 0322.HK	TINGYI
@@ -4751,6 +4760,7 @@ OAS	Oasis Petroleum Inc.
 ARP	Atlas Resource Partners, L.P.
 WCE.V	Wescan Energy Corp.
 BTE.TO	Baytex Energy Corp.
+I7R.F	GLOBAL ASIA HLDG
 PXX.TO	BlackPearl Resources Inc.
 TMV.V	3MV Energy Corp.
 PDCE	PDC Energy, Inc.
@@ -4948,6 +4958,7 @@ PWT.TO	Penn West Petroleum Ltd.
 ROE.V	Renaissance Oil Corp.
 KFG.V	KFG Resources Ltd.
 AET-UN.TO	Argent Energy Trust
+TCF.V	CBM Asia Development Corp.
 PMT.TO	Perpetual Energy Inc.
 EN.V	Magnum Energy Inc.
 PTR.V	Petromin Resources Ltd.
@@ -5034,6 +5045,7 @@ AXPW	Axion Power International Inc.
 EMR	Emerson Electric Co.
 AUSI	Aura Systems, Inc.
 LIME	Lime Energy Co.
+APWC	Asia Pacific Wire & Cable Corp. Ltd.
 ENS	EnerSys
 AIMC	Altra Industrial Motion Corp.
 REFR	Research Frontiers Inc.
@@ -5103,6 +5115,7 @@ GSH.V	Golden Share Mining Corporation
 CNY.V	Cancana Resources Corp
 SVB.TO	Silver Bull Resources, Inc.
 BLT.L	BHP Billiton plc
+EMXX	Eurasian Minerals Inc.
 NCF.TO	Northcliff Resources Ltd.
 FSY.TO	Forsys Metals Corp.
 BIZ.F	PERSHIMCO RESOURCES
@@ -5134,6 +5147,7 @@ IRL.TO	Minera IRL Limited
 APGA	American Paramount Gold Corp.
 JAU.V	Jet Gold Corp.
 TYE.V	Troymet Exploration Corp.
+WG3.F	EAST ASIA MINERALS
 ERD.TO	Erdene  Resource Development Corporation
 DMI.BE	DOWA HOLDINGS
 ZINC	Horsehead Holding Corp.
@@ -5488,6 +5502,7 @@ VSR.V	Vanstar Mining Resources Inc.
 DV.V	Megastar Development Corp.
 RTH.V	Rathdowney Resources Ltd.
 PRK.TO	Potash Ridge Corporation
+R1E.SG	South East Asia Resources Limited
 WAI.V	West African Iron Ore Corp.
 III.TO	Imperial Metals Corp.
 RR.AX	Minrex Resources NL
@@ -5740,6 +5755,7 @@ NPK.TO	Verde Potash Plc
 TRX.V	Tribute Pharmaceuticals Canada Inc.
 BML.V	Barker Minerals Ltd.
 WPQ.V	WPC Resources Inc.
+ASN.V	Asian Mineral Resources Ltd.
 VZZ.V	Uranium Valley Mines Ltd.
 SNKTY	Independence Resources Plc
 VXL.AX	Valence Industries Limited
@@ -5801,6 +5817,7 @@ APN.V	Altiplano Minerals Ltd.
 KZX.V	KazaX Minerals Inc.
 RMK.V	Red Moon Potash Inc.
 YAL.AX	Yancoal Australia Ltd
+EAS.V	East Asia Minerals Corporation
 CEC.V	Compliance Energy Corp.
 JE4.F	GOLDROCK MINES
 CLD	Cloud Peak Energy Inc.
@@ -5911,6 +5928,7 @@ RVBD	Riverbed Technology, Inc.
 SPIN	Spine Pain Management, Inc.
 SB3.DU	SOFTBANK TECH
 IMS	IMS Health Holdings, Inc.
+0061.HK	North Asia Resources Holdings Limited
 LCNT.PA	Consort NT SA
 EDGW	Edgewater Technology Inc.
 HIA1.DU	HITACHI LTD
@@ -7559,6 +7577,7 @@ UFS	Domtar Corporation
 RPL.SG	UPM-KYMMENE CORP.
 VOITHPAPR.BO	Voith Paper Fabrics India Limited
 YB1.BE	YOUBISHENG  G P
+3366.HK	OCT (ASIA)
 HEZ.DU	HERLITZ
 CLW	Clearwater Paper Corporation
 3331.HK	VINDA INT'L
@@ -7669,6 +7688,7 @@ STON	Stonemor Partners LP
 SLP	Muscle Pharm Corp.
 TAX	Liberty Tax, Inc.
 0922.HK	Anxian Yuan China Holdings Limited
+OA4.SG	EAST ASIATIC
 XSL.F	STEINER LEISURE
 WTW	Weight Watchers International, Inc.
 WOOF	VCA Inc.
@@ -8158,6 +8178,7 @@ DWNI.HA	DEUTSCHE WOHNEN
 CTO	Consolidated Tomoka Land Co.
 VIPUL.NS	Vipul Ltd
 K2M.SI	Debao Property Development Ltd.
+1777.HK	FANTASIA
 QHI.MU	SHIMAO PPTY
 0017.HK	New World Development Company Limited
 0014.HK	Hysan Development Company Limited
@@ -8198,6 +8219,7 @@ KGF.V	King George Financial Corp.
 PSK.TO	PrairieSky Royalty Ltd.
 2007.HK	COUNTRY GARDEN
 E8Z.SI	Roxy-Pacific Holdings Limited
+FT7.F	FANTASIA HLDGS
 WOLE.BR	Woluwe Extension SA
 BRP	Brookfield Residential Properties Inc.
 FET.F	FAR EAST CONSORTIUM
@@ -8263,6 +8285,7 @@ BC	Brunswick Corporation
 BVB.F	BORUSSIA DORTMUND
 EGT	Entertainment Gaming Asia Inc.
 HOG	Harley-Davidson, Inc.
+VMT.AX	Vmoto Limited
 WI1.F	WINNEBAGO INDUSTR.
 PII	Polaris Industries Inc.
 POIL	Pacific Oil Company
@@ -8274,6 +8297,7 @@ PX	Marine Products Corp.
 THO	Thor Industries Inc.
 TERX	Terra Inventions Corp.
 0422.HK	VMEP HOLDINGS
+SLG.NZ	Sealegs Corporation Limited
 FXNC	First National Corporation
 BVFL	BV Financial, Inc.
 VABK	Virginia National Bankshares Corporation
@@ -8744,6 +8768,7 @@ NNN	National Retail Properties, Inc.
 CLNY	Colony Financial, Inc.
 CCG	Campus Crest Communities, Inc.
 JMI	JAVELIN Mortgage Investment Corp.
+BLKASHYAP.NS	B L Kashyap & Sons Limited
 ARCP	American Realty Capital Properties, Inc.
 FVI.DE	Fair Value REIT-AG
 ITT	AG Mortgage Investment Trust, Inc.
@@ -8953,6 +8978,7 @@ HPT	Hospitality Properties Trust
 WRI	Weingarten Realty Investors
 WP4.MU	WEING RLTY REIT-SBI
 CDR	Cedar Realty Trust, Inc.
+BLND.L	The British Land Company Public Limited Company
 DDR	DDR Corp.
 GGP	General Growth Properties, Inc
 LI.PA	Klepierre SA
@@ -8992,6 +9018,9 @@ LES	The Mint Leasing, Inc.
 AL	Air Lease Corporation
 ESSX	Essex Rental Corp.
 BWO.L	Barloworld Ltd.
+TGH	Textainer Group Holdings Limited
+EHIC	eHi Car Services Limited
+FLY	FLY Leasing Limited
 ECI.TO	EnerCare Inc.
 GFN	General Finance Corporation
 0936.HK	EAGLE LEGEND
@@ -9001,6 +9030,7 @@ ACY	AeroCentury Corp.
 GFN.V	Gold Finder Explorations Ltd.
 HTZ	Hertz Global Holdings, Inc.
 AYR	Aircastle LTD
+CHW.TO	Chesswood Group Limited
 HEES	"H&E; Equipment Services Inc."
 LVD.L	Lavendon Group plc
 SIX3.DE	Sixt Societas Europaea
@@ -9016,6 +9046,8 @@ NEFF	Neff Corp.
 WLFC	Willis Lease Finance Corp.
 GRC	McGrath Rentcorp
 NTG.L	Northgate plc
+TGA.AX	Thorn Group Limited
+BDI.TO	Black Diamond Group Limited
 SBAC	SBA Communications Corp.
 ELRC	Electro Rent Corporation
 TAL	TAL International Group, Inc.
@@ -9064,9 +9096,11 @@ PHM	PulteGroup, Inc.
 BZH	Beazer Homes USA Inc.
 GFA	Gafisa S.A.
 1128.HK	WYNN MACAU
+0027.HK	Galaxy Entertainment Group Limited
 SKC.AX	Sky City Entertainment Group Ltd.
 TN	Vail Resorts Inc.
 DRII	Diamond Resorts International, Inc.
+CWN.AX	Crown Resorts Limited
 BYD	Boyd Gaming Corporation
 1928.HK	SANDS CHINA LTD
 CNTY	Century Casinos Inc.
@@ -9078,6 +9112,7 @@ LVS	Las Vegas Sands Corp.
 LACO	Lakes Entertainment Inc.
 VAC	Marriott Vacations Worldwide Corp.
 LCR.F	LAS VEGAS SANDS
+0070.HK	Neptune Group Limited
 ISLE	Isle of Capri Casinos, Inc.
 CACQ	Caesars Acquisition Company
 RCL	Royal Caribbean Cruises Ltd.
@@ -9085,6 +9120,7 @@ TNA.V	Evergreen Gaming Corporation
 ERI	Eldorado Resorts, Inc.
 PNK	Pinnacle Entertainment Inc.
 CCL	Carnival Corporation
+0880.HK	SJM Holdings Limited
 CZR	Caesars Entertainment Corporation
 PENN	Penn National Gaming Inc.
 X7A.SG	MELCO INTL DEVT
@@ -9098,6 +9134,7 @@ UWN	Nevada Gold & Casinos Inc.
 GBCS	Global Healthcare REIT, Inc.
 KW9A.SG	GALAXY ENTERTAIN
 G13.SI	Genting Singapore PLC
+PEL	Melco Crown Entertainment Limited
 TY.TO	MTY Food Group Inc.
 KEG-UN.TO	Keg Royalties Income Fund
 DFRG	Del Frisco's Restaurant Group, Inc.
@@ -9132,6 +9169,8 @@ SONC	Sonic Corp.
 SRV-UN.TO	Sir Royalty Income Fund
 DIN	DineEquity, Inc.
 DPZ	Domino's Pizza, Inc.
+JUBLFOOD.NS	Jubilant FoodWorks Limited
+RFG.AX	Retail Food Group Limited
 DAVE	Famous Dave's of America Inc.
 SSPG.L	SSP Group plc
 PZA.TO	Pizza Pizza Royalty Corp.
@@ -9158,6 +9197,7 @@ CHUY	Chuy's Holdings, Inc.
 BPF-UN.TO	Boston Pizza Royalties Income Fund
 OLD.F	CRACKER BARREL OLD
 DRI	Darden Restaurants, Inc.
+BFW.NZ	Burger Fuel Worldwide Limited
 GTIM	Good Times Restaurants Inc.
 EAT	Brinker International, Inc.
 CMG	Chipotle Mexican Grill, Inc.
@@ -9178,6 +9218,8 @@ IRG.TO	Imvescor Restaurant Group Inc.
 KKD	Krispy Kreme Doughnuts, Inc.
 FRS	Frisch's Restaurants, Inc.
 0228.HK	CHINA ENERGY
+TYR.SG	"TOYO TIR&RUB;"
+F13.SI	Fu Yu Corporation Limited
 CTIB	CTI Industries Corp.
 STRI	STR Holdings, Inc.
 WMS	Advanced Drainage Systems, Inc.
@@ -9188,15 +9230,19 @@ GTR.DU	GOODYEAR T & RUBBER
 CSL	Carlisle Companies Incorporated
 VYST	Vystar Corporation
 2128.HK	CHINA LESSO
+ACPLASQ.BO	Machino Plastics Limited
 N7G.F	NANOGATE
 YE	Myers Industries Inc.
 BAF.DE	Balda AG
 DSWL	Deswell Industries, Inc.
+RUBFILA.BO	Rubfila International Limited
 NZE.F	ZEON 
 AEPI	AEP Industries Inc.
 PVL.PA	Plastiques du Val de Loire
+JKTYREIND.BO	JK Tyre & Industries Limited
 CTB	Cooper Tire & Rubber Co.
 YRB.DU	YOKOHAMA RUBBER
+VAMSHIRU.BO	Vamshi Rubber Limited
 GT	The Goodyear Tire & Rubber Company
 ZX.DE	Masterflex SE
 BOS.TO	Airboss of America Corp.
