@@ -23,6 +23,7 @@ import           System.FilePath
 import           System.IO                   ()
 import qualified Yahoofinance                as Yahoo
 
+-- | asdkfjd Rich
 testFrom :: Day
 testFrom = fromGregorian 2015 04 04
 testTo :: Day
@@ -42,8 +43,8 @@ filterSymbolsOfInterest = Map.filter isQuoteOfInterest
 
 isQuoteOfInterest :: [Yahoo.HistoricalQuote] -> Bool
 isQuoteOfInterest list =
-  let latestData = maximumBy (compare `Func.on` Yahoo.date) list
-      latestLow = Yahoo.low latestData
+  let latestData        = maximumBy (compare `Func.on` Yahoo.date) list
+      latestLow         = Yahoo.low latestData
       dataWithoutLatest = filter (/= latestData) list
   in latestLow > 3 && latestLow < 800 && latestLow < maximumPrice dataWithoutLatest * 0.88
 
@@ -96,16 +97,15 @@ sendEmail username password receivers quotes symbols = doSMTPSTARTTLS host $ \co
     if authSucceed
       then mapM_ (\r -> sendPlainTextMail r username subject body conn) receivers
       else print "Authentication error."
-  where subject = "Gefallene Kurse"
-        body    = T.pack $ (headline++) $ intercalate "\n" $ map quoteText (Map.keys quotes)
-        quoteText q = "[" ++ q ++ "] " ++ sym q ++ " (-" ++ show (diff q) ++ "%, " ++ show (currentPrice q) ++ "):\n" ++ stockInfoUrl q
-        list k  = Map.findWithDefault [] k quotes
+  where subject        = "Gefallene Kurse"
+        body           = T.pack $ (headline++) $ intercalate "\n" $ map quoteText (Map.keys quotes)
+        quoteText q    = "[" ++ q ++ "] " ++ sym q ++ " (-" ++ show (diff q) ++ "%, " ++ show (currentPrice q) ++ "):\n" ++ stockInfoUrl q
+        list k         = Map.findWithDefault [] k quotes
         currentPrice k = truncate $ Yahoo.close $ last $ list k
-        sym k  = Map.findWithDefault "" k symbols
-        diff k  = truncate $ 100 - (minimumPrice (list k) * 100 / maximumPrice (list k))
+        sym k          = Map.findWithDefault "" k symbols
+        diff k         = truncate $ 100 - (minimumPrice (list k) * 100 / maximumPrice (list k))
 
-
-main :: IO ()
+main ::  IO ()
 main = do
   filePaths <- map ("symbols/"++) <$> readDir "symbols/"
   contents <- mapM readFile filePaths
