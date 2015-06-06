@@ -10,7 +10,7 @@ import           Data.Configurator.Types     (Config)
 import           Data.Csv
 import qualified Data.Function               as Func (on)
 import           Data.List                   (intercalate, maximumBy)
-import           Data.List.Split
+import           Data.List.Split             (chunksOf)
 import qualified Data.Map                    as Map
 import qualified Data.Text.Lazy              as T
 import           Data.Time
@@ -24,12 +24,12 @@ import           System.IO                   ()
 import qualified Yahoofinance                as Yahoo
 
 -- | asdkfjd Rich
-testFrom :: Day
-testFrom = fromGregorian 2015 04 04
-testTo :: Day
-testTo = fromGregorian 2015 04 08
-testQuotes :: [String]
-testQuotes = ["YHOO"]
+-- testFrom :: Day
+-- testFrom = fromGregorian 2015 04 04
+-- testTo :: Day
+-- testTo = fromGregorian 2015 04 08
+-- testQuotes :: [String]
+-- testQuotes = ["YHOO"]
 
 maximumPrice :: [Yahoo.HistoricalQuote] -> Float
 maximumPrice [] = 0

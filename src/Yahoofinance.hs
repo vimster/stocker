@@ -16,13 +16,16 @@ import           Data.List                  (groupBy, intercalate)
 import           Data.List.Split
 import qualified Data.Map                   as Map
 import           Data.Time
-import           Data.Time.Calendar         (Day (..), fromGregorian)
+import           Data.Time.Calendar         ()
 import           Network.HTTP.Conduit       (simpleHttp)
 import qualified Network.URI.Encode         as Enc
 import           System.Locale              (defaultTimeLocale)
 
+testFrom ::  Day
 testFrom = fromGregorian 2015 04 04
+testTo ::  Day
 testTo = fromGregorian 2015 04 08
+testQuotes ::  [QuoteSymbol]
 testQuotes = ["YHOO"]
 
 type QuoteSymbol = String
@@ -101,6 +104,7 @@ buildHistoricalDataQuery from to symbols =
 getJSON :: String -> IO B.ByteString
 getJSON = simpleHttp
 
+testJson ::  BS.ByteString
 testJson = BS.pack "{\"query\":{\"results\":{\"quote\":[{\"Symbol\":\"YHOO\",\"Date\":\"2015-04-24\",\"Open\":\"43.73\",\"High\":\"44.71\",\"Low\":\"43.69\",\"Close\":\"44.52\",\"Volume\":\"11267500\",\"Adj_Close\":\"44.52\"}]}}}"
 
 testmain :: IO ()
