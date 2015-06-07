@@ -21,8 +21,11 @@ import           Network.HTTP.Conduit       (simpleHttp)
 import qualified Network.URI.Encode         as Enc
 import           System.Locale              (defaultTimeLocale)
 
+testFrom ::  Day
 testFrom = fromGregorian 2015 04 04
+testTo ::  Day
 testTo = fromGregorian 2015 04 08
+testQuotes ::  [QuoteSymbol]
 testQuotes = ["YHOO"]
 
 type QuoteSymbol = String

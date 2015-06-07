@@ -23,7 +23,7 @@ import           System.FilePath
 import           System.IO                   ()
 import qualified Yahoofinance                as Yahoo
 
-testFrom :: Day
+testFrom ::  Day
 testFrom = fromGregorian 2015 04 04
 testTo :: Day
 testTo = fromGregorian 2015 04 08
@@ -42,8 +42,8 @@ filterSymbolsOfInterest = Map.filter isQuoteOfInterest
 
 isQuoteOfInterest :: [Yahoo.HistoricalQuote] -> Bool
 isQuoteOfInterest list =
-  let latestData = maximumBy (compare `Func.on` Yahoo.date) list
-      latestLow = Yahoo.low latestData
+  let latestData        = maximumBy (compare `Func.on` Yahoo.date) list
+      latestLow         = Yahoo.low latestData
       dataWithoutLatest = filter (/= latestData) list
   in latestLow > 3 && latestLow < 800 && latestLow < maximumPrice dataWithoutLatest * 0.88
 
@@ -68,7 +68,7 @@ testTsv = BS.pack "haus\tmaus\ntor\tpforte\n"
 
 parseTsv :: String -> Map.Map String String
 parseTsv content =
-  let input = BS.pack content
+  let input  = BS.pack content
       result = decodeWith delimiter HasHeader input :: Either String (V.Vector (String, String))
   in case result of
     Left _ -> Map.empty
@@ -87,7 +87,7 @@ loadConfig = load [Required "appconfig.cfg"]
 host :: String
 host = "smtp.zoho.com"
 
-headline :: String
+headline ::  String
 headline = "Folgende Kurse sind in der letzten Woche um mehr als 12% gesunken:\n"
 
 sendEmail :: String -> String -> [String]-> Yahoo.QuoteMap -> Map.Map String String -> IO ()
@@ -96,16 +96,16 @@ sendEmail username password receivers quotes symbols = doSMTPSTARTTLS host $ \co
     if authSucceed
       then mapM_ (\r -> sendPlainTextMail r username subject body conn) receivers
       else print "Authentication error."
-  where subject = "Gefallene Kurse"
-        body    = T.pack $ (headline++) $ intercalate "\n" $ map quoteText (Map.keys quotes)
-        quoteText q = "[" ++ q ++ "] " ++ sym q ++ " (-" ++ show (diff q) ++ "%, " ++ show (currentPrice q) ++ "):\n" ++ stockInfoUrl q
-        list k  = Map.findWithDefault [] k quotes
+  where subject        = "Gefallene Kurse"
+        body           = T.pack $ (headline++) $ intercalate "\n" $ map quoteText (Map.keys quotes)
+        quoteText q    = "[" ++ q ++ "] " ++ sym q ++ " (-" ++ show (diff q) ++ "%, " ++ show (currentPrice q) ++ "):\n" ++ stockInfoUrl q
+        list k         = Map.findWithDefault [] k quotes
         currentPrice k = truncate $ Yahoo.close $ last $ list k
-        sym k  = Map.findWithDefault "" k symbols
-        diff k  = truncate $ 100 - (minimumPrice (list k) * 100 / maximumPrice (list k))
+        sym k          = Map.findWithDefault "" k symbols
+        diff k         = truncate $ 100 - (minimumPrice (list k) * 100 / maximumPrice (list k))
 
 
-main :: IO ()
+main ::  IO ()
 main = do
   filePaths <- map ("symbols/"++) <$> readDir "symbols/"
   contents <- mapM readFile filePaths
