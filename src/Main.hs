@@ -9,9 +9,11 @@ import           Data.Configurator
 import           Data.Configurator.Types     (Config)
 import           Data.Csv
 import qualified Data.Function               as Func (on)
-import           Data.List                   (intercalate, maximumBy)
+import qualified Data.List                   as L (intercalate, lookup,
+                                                   maximumBy)
 import           Data.List.Split
 import qualified Data.Map                    as Map
+import           Data.Maybe
 import qualified Data.Text.Lazy              as T
 import           Data.Time
 import qualified Data.Vector                 as V
@@ -42,7 +44,7 @@ filterSymbolsOfInterest = Map.filter isQuoteOfInterest
 
 isQuoteOfInterest :: [Yahoo.HistoricalQuote] -> Bool
 isQuoteOfInterest list =
-  let latestData        = maximumBy (compare `Func.on` Yahoo.date) list
+  let latestData        = L.maximumBy (compare `Func.on` Yahoo.date) list
       latestLow         = Yahoo.low latestData
       dataWithoutLatest = filter (/= latestData) list
   in latestLow > 3 && latestLow < 800 && latestLow < maximumPrice dataWithoutLatest * 0.88
@@ -97,18 +99,21 @@ sendEmail username password receivers quotes symbols = doSMTPSTARTTLS host $ \co
       then mapM_ (\r -> sendPlainTextMail r username subject body conn) receivers
       else print "Authentication error."
   where subject        = "Gefallene Kurse"
-        body           = T.pack $ (headline++) $ intercalate "\n" $ map quoteText (Map.keys quotes)
+        body           = T.pack $ (headline++) $ L.intercalate "\n" $ map quoteText (Map.keys quotes)
         quoteText q    = "[" ++ q ++ "] " ++ sym q ++ " (-" ++ show (diff q) ++ "%, " ++ show (currentPrice q) ++ "):\n" ++ stockInfoUrl q
         list k         = Map.findWithDefault [] k quotes
         currentPrice k = truncate $ Yahoo.close $ last $ list k
         sym k          = Map.findWithDefault "" k symbols
         diff k         = truncate $ 100 - (minimumPrice (list k) * 100 / maximumPrice (list k))
 
+commands = [("indices", ["cac40", "dax", "euro_stoxx_50", "ftse100", "m_dax", "tec_dax"]),
+            ("all", ["aktien"])
+            ]
 
 main :: IO ()
 main = do
-  -- filePaths <- map ("symbols/"++) <$> readDir "symbols/"
-  filePaths <- fmap (map (("symbols/" ++) . (++ ".txt"))) getArgs
+  command <- head <$> getArgs
+  let filePaths = map (("symbols/" ++) . (++ ".txt")) $ fromJust $ L.lookup command commands
   contents <- mapM readFile filePaths
   let symbols = Map.unions $ map parseTsv contents
   putStr "symbol count: "
