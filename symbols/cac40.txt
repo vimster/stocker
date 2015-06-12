@@ -1,0 +1,41 @@
+Symbol	Name
+AC.PA	Accor S.A.
+ACA.PA	Credit Agricole S.A.
+AI.PA	LAir Liquide SA
+AIR.PA	AIRBUS GROUP
+ALO.PA	Alstom SA
+ALU.PA	Alcatel-Lucent
+BN.PA	Danone
+BNP.PA	BNP Paribas SA
+CA.PA	Carrefour SA
+CAP.PA	Cap Gemini S.A.
+CS.PA	AXA Group
+DG.PA	VINCI S.A.
+EDF.PA	Electricite de France SA
+EI.PA	Essilor International SA
+EN.PA	Bouygues SA
+FP.PA	TOTAL S.A.
+FR.PA	Valeo SA
+GLE.PA	Societe Generale Group
+GSZ.PA	ENGIE SA
+KER.PA	Kering SA
+LG.PA	Lafarge S.A.
+LR.PA	Legrand SA
+MC.PA	LVMH Moet Hennessy Louis Vuitton SA
+ML.PA	Compagnie Generale DES Etablissements Michelin SCA
+MT.PA	ARCELORMITTAL REG
+OR.PA	L'Oreal SA
+ORA.PA	Orange
+PUB.PA	Publicis Groupe SA
+RI.PA	Pernod-Ricard SA
+RNO.PA	Renault Societe Anonym
+SAF.PA	Safran SA
+SAN.PA	Sanofi
+SGO.PA	Compagnie de Saint-Gobain S.A.
+SOLB.PA	SOLVAY
+SU.PA	Schneider Electric SE
+TEC.PA	Technip SA
+UG.PA	Peugeot S.A.
+UL.PA	UNIBAIL-RODAMCO
+VIE.PA	Veolia Environnement S.A.
+VIV.PA	Vivendi S.A.

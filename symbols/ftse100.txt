@@ -1,0 +1,102 @@
+Symbol	Name
+AAL.L	Anglo American plc
+ABF.L	Associated British Foods plc
+ADM.L	Admiral Group plc
+ADN.L	Aberdeen Asset Management PLC
+AGK.L	Aggreko plc
+AHT.L	Ashtead Group plc
+ANTO.L	Antofagasta plc
+ARM.L	ARM Holdings plc
+AV.L	Aviva plc
+AZN.L	AstraZeneca PLC
+BA.L	BAE Systems plc
+BAB.L	Babcock International Group plc
+BARC.L	Barclays PLC
+BATS.L	British American Tobacco plc
+BDEV.L	Barratt Developments plc
+BG.L	BG Group plc
+BLND.L	The British Land Company Public Limited Company
+BLT.L	BHP Billiton plc
+BNZL.L	Bunzl plc
+BP.L	BP p.l.c.
+BRBY.L	Burberry Group plc
+BT-A.L	BT Group plc
+CCH.L	COCA-COLA HBC N
+CCL.L	Carnival plc
+CNA.L	Centrica plc
+CPG.L	Compass Group PLC
+CPI.L	Capita plc
+CRH.L	CRH plc
+DC.L	DIXONS CARPHONE
+DGE.L	Diageo plc
+DLG.L	Direct Line Insurance Group PLC
+EXPN.L	Experian plc
+EZJ.L	easyJet plc
+FRES.L	Fresnillo PLC
+GFS.L	G4S plc
+GKN.L	GKN plc
+GLEN.L	Glencore Plc
+GSK.L	GlaxoSmithKline plc
+HIK.L	Hikma Pharmaceuticals plc
+HL.L	Hargreaves Lansdown Plc.
+HMSO.L	Hammerson plc
+HSBA.L	HSBC Holdings plc
+IAG.L	International Consolidated Airlines Group, S.A.
+IHG.L	Intercontinental Hotels Group plc
+III.L	3i Ord
+IMT.L	Imperial Tobacco Group plc
+INTU.L	intu properties plc
+ITRK.L	Intertek Group plc
+ITV.L	ITV plc
+JMAT.L	Johnson Matthey plc
+KGF.L	Kingfisher plc
+LAND.L	Land Securities Group plc
+LGEN.L	Legal & General Group Plc
+LLOY.L	Lloyds Banking Group plc
+LSE.L	London Stock Exchange Group plc
+MERL.L	Merlin Entertainments plc
+MGGT.L	Meggitt PLC
+MKS.L	Marks & Spencer Group plc
+MNDI.L	Mondi plc
+MRW.L	Wm. Morrison Supermarkets plc
+NG.L	National Grid plc
+NXT.L	Next Plc
+OML.L	Old Mutual plc
+PRU.L	Prudential plc
+PSN.L	Persimmon plc
+PSON.L	Pearson plc
+RB.L	Reckitt Benckiser Group plc
+RBS.L	The Royal Bank of Scotland Group plc
+RDSA.L	Royal Dutch Shell plc
+RDSB.L	Royal Dutch Shell plc
+REL.L	Reed Elsevier PLC
+RIO.L	Rio Tinto plc
+RMG.L	Royal Mail plc
+RR.L	Rolls Royce Holdings plc
+RRS.L	Randgold Resources Limited
+RSA.L	RSA Insurance Group plc
+SAB.L	SABMiller plc
+SBRY.L	J. Sainsbury plc
+SDR.L	Schroders plc
+SGE.L	Sage Group plc
+SHP.L	Shire plc
+SKY.L	SKY
+SL.L	Standard Life plc
+SMIN.L	Smiths Group plc
+SN.L	Smith and Nephew plc
+SPD.L	Sports Direct International plc
+SSE.L	SSE plc
+STAN.L	Standard Chartered PLC
+STJ.L	St. James's Place plc
+SVT.L	Severn Trent Plc
+TPK.L	Travis Perkins plc
+TSCO.L	Tesco PLC
+TUI.L	TUI AG
+TW.L	Taylor Wimpey plc
+ULVR.L	Unilever plc
+UU.L	United Utilities Group PLC
+VOD.L	Vodafone Group Public Limited Company
+WEIR.L	The Weir Group PLC
+WOS.L	Wolseley plc
+WPP.L	WPP plc
+WTB.L	Whitbread PLC

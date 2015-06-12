@@ -1,0 +1,31 @@
+Symbol	Name
+AFX.DE	Carl Zeiss Meditec AG
+AIXA.DE	Aixtron SE
+BBZA.DE	BB Biotech AG
+BC8.DE	Bechtle AG
+COK.DE	Cancom SE
+COP.DE	CompuGroup Medical AG
+DLG.DE	Dialog Semiconductor PLC
+DRI.DE	Drillisch Aktiengesellschaft
+DRW3.DE	Dragerwerk AG & Co. KGaA
+EVT.DE	Evotec AG
+FNTN.DE	freenet AG
+GFT.DE	GFT Technologies AG
+JEN.DE	Jenoptik AG
+LPK.DE	LPKF Laser & Electronics AG
+M5Z.DE	Manz AG
+MOR.DE	Morphosys AG
+NDX1.DE	Nordex SE
+NEM.DE	Nemetschek AG
+O1BC.DE	XING AG
+O2D.DE	Telefonica Deutschland Holding AG
+PFV.DE	Pfeiffer Vacuum Technology AG
+QIA.DE	Qiagen NV
+QSC.DE	QSC AG
+RSTA.DE	RIB Software AG
+S92.DE	SMA Solar Technology AG
+SBS.DE	STRATEC Biomedical AG
+SOW.DE	Software AG
+SRT3.DE	Sartorius Aktiengesellschaft
+UTDI.DE	United Internet AG
+WDI.DE	Wirecard AG

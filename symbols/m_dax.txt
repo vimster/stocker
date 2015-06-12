@@ -1,0 +1,51 @@
+Symbol	Name
+AIR.DE	AIRBUS GROUP
+ANN.DE	Deutsche Annington Immobilien SE
+ARL.DE	Aareal Bank AG
+BDT.DE	Bertrandt AG
+BNR.DE	Brenntag AG
+BOSS.DE	Hugo Boss AG
+CLS1.DE	Celesio AG
+DEQ.DE	Deutsche Euroshop AG
+DUE.DE	Durr Aktiengesellschaft
+DWNI.DE	Deutsche Wohnen AG
+EVD.DE	CTS Eventim AG & Co. KGaA
+EVK.DE	Evonik Industries AG
+FIE.DE	Fielmann Aktiengesellschaft
+FPE3.DE	Fuchs Petrolub SE
+FRA.DE	Fraport AG
+G1A.DE	GEA Group Aktiengesellschaft
+GBF.DE	Bilfinger SE
+GIL.DE	DMG Mori Seiki Aktiengesellschaft
+GWI1.DE	Gerry Weber International AG
+GXI.DE	Gerresheimer AG
+HNR1.DE	Hannover Ruck SE
+HOT.DE	Hochtief AG
+JUN3.DE	Jungheinrich AG
+KCO.DE	Klockner & Co SE
+KD8.DE	Kabel Deutschland Holding AG
+KGX.DE	KION GROUP AG
+KRN.DE	Krones AG
+KU2.DE	KUKA Aktiengesellschaft
+LEG.DE	Lecico Egypt SAE
+LEO.DE	LEONI AG
+MAN.DE	MAN SE
+MEO.DE	METRO AG
+MTX.DE	MTU Aero Engines AG
+NDA.DE	Aurubis AG
+NOEJ.DE	NORMA Group SE
+OSR.DE	OSRAM Licht AG
+PSM.DE	ProSiebenSat.1 Media AG
+RHK.DE	Rhon-Klinikum Aktiengesellschaft
+RHM.DE	Rheinmetall AG
+RRTL.DE	RTL GROUP
+SAZ.DE	Stada-Arzneimittel AG
+SPR.DE	Axel Springer SE
+SY1.DE	Symrise AG
+SZG.DE	Salzgitter AG
+SZU.DE	Suedzucker AG
+TEG.DE	TAG Immobilien AG.
+TLX.DE	Talanx AG
+WCH.DE	Wacker Chemie AG
+WIN.DE	Wincor Nixdorf Aktiengesellschaft
+ZIL2.DE	ElringKlinger AG

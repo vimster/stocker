@@ -71,7 +71,7 @@ parseTsv content =
   let input  = BS.pack content
       result = decodeWith delimiter HasHeader input :: Either String (V.Vector (String, String))
   in case result of
-    Left _ -> Map.empty
+    Left w -> Map.fromList [(w, w)]
     Right v -> V.foldl (\m (a, b) -> Map.insert a b m) Map.empty v
 
 
@@ -105,11 +105,12 @@ sendEmail username password receivers quotes symbols = doSMTPSTARTTLS host $ \co
         diff k         = truncate $ 100 - (minimumPrice (list k) * 100 / maximumPrice (list k))
 
 
-main ::  IO ()
+main :: IO ()
 main = do
-  filePaths <- map ("symbols/"++) <$> readDir "symbols/"
+  -- filePaths <- map ("symbols/"++) <$> readDir "symbols/"
+  filePaths <- getArgs
   contents <- mapM readFile filePaths
-  let symbols = parseTsv (head contents)
+  let symbols = Map.unions $ map parseTsv contents
   putStr "symbol count: "
   print $ Map.size symbols
   yesterday <- addDays (-1) <$> fmap utctDay getCurrentTime

@@ -1,0 +1,50 @@
+Symbol	Name
+ABI.BR	AnheuserBusch InBev SA/NV
+AI.PA	LAir Liquide SA
+AIR.PA	AIRBUS GROUP
+ALV.DE	Allianz SE
+ASML.AS	ASML HLDG
+BAS.DE	BASF SE
+BAYN.DE	Bayer AG
+BBVA.MC	BBVA
+BMW.DE	Bayerische Motoren Werke Aktiengesellschaft
+BN.PA	Danone
+BNP.PA	BNP Paribas SA
+CA.PA	Carrefour SA
+CS.PA	AXA Group
+DAI.DE	Daimler AG
+DBK.DE	Deutsche Bank AG
+DG.PA	VINCI S.A.
+DPW.DE	Deutsche Post AG
+DTE.DE	Deutsche Telekom AG
+EI.PA	Essilor International SA
+ENEL.MI	Enel SpA
+ENI.MI	Eni SpA
+EOAN.DE	E.ON SE
+FP.PA	TOTAL S.A.
+G.MI	Assicurazioni Generali S.p.A.
+GLE.PA	Societe Generale Group
+GSZ.PA	ENGIE SA
+IBE.MC	IBERDROLA
+INGA.AS	ING GROUP
+ISP.MI	Intesa Sanpaolo S.p.A.
+ITX.MC	INDITEX
+MC.PA	LVMH Moet Hennessy Louis Vuitton SA
+MUV2.DE	Munchener Ruckversicherungs-Gesellschaft Aktiengesellschaft
+OR.PA	LOreal SA
+ORA.PA	Orange
+PHIA.AS	ROY.PHILIPS
+REP.MC	REPSOL
+RWE.DE	RWE AG
+SAN.MC	BANCO SANTANDER
+SAN.PA	Sanofi
+SAP.DE	SAP SE
+SGO.PA	Compagnie de Saint-Gobain S.A.
+SIE.DE	Siemens Aktiengesellschaft
+SU.PA	Schneider Electric SE
+TEF.MC	TELEFONICA
+UCG.MI	UniCredit S.p.A.
+UL.PA	UNIBAIL-RODAMCO
+UNA.AS	UNILEVER CERT
+VIV.PA	Vivendi S.A.
+VOW3.DE	Volkswagen AG
