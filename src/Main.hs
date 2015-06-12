@@ -106,7 +106,7 @@ sendEmail username password receivers quotes symbols = doSMTPSTARTTLS host $ \co
         sym k          = Map.findWithDefault "" k symbols
         diff k         = truncate $ 100 - (minimumPrice (list k) * 100 / maximumPrice (list k))
 
-commands = [("indices", ["cac40", "dax", "euro_stoxx_50", "ftse100", "m_dax", "tec_dax"]),
+commands = [("indices", ["cac40", "dax", "euro_stoxx_50", "ftse100", "m_dax", "tec_dax", "smi"]),
             ("all", ["aktien"])
             ]
 
