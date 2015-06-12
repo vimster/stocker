@@ -22,7 +22,7 @@ GXI.DE	Gerresheimer AG
 HNR1.DE	Hannover Ruck SE
 HOT.DE	Hochtief AG
 JUN3.DE	Jungheinrich AG
-KCO.DE	Klockner & Co SE
+KCO.DE	Klockner and Co SE
 KD8.DE	Kabel Deutschland Holding AG
 KGX.DE	KION GROUP AG
 KRN.DE	Krones AG

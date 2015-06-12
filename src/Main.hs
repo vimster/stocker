@@ -108,7 +108,7 @@ sendEmail username password receivers quotes symbols = doSMTPSTARTTLS host $ \co
 main :: IO ()
 main = do
   -- filePaths <- map ("symbols/"++) <$> readDir "symbols/"
-  filePaths <- getArgs
+  filePaths <- fmap (map (("symbols/" ++) . (++ ".txt"))) getArgs
   contents <- mapM readFile filePaths
   let symbols = Map.unions $ map parseTsv contents
   putStr "symbol count: "
