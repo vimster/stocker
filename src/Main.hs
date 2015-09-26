@@ -49,6 +49,16 @@ isQuoteOfInterest list =
       dataWithoutLatest = filter (/= latestData) list
   in latestLow > 3 && latestLow < 800 && latestLow < maximumPrice dataWithoutLatest * 0.88
 
+isQuoteOfInterest2 :: [Yahoo.HistoricalQuote] -> Bool
+isQuoteOfInterest2 list =
+  let lowPrices         = map Yahoo.low list
+      highPrices         = map Yahoo.high list
+  in isSorted lowPrices && isSorted highPrices
+
+isSorted :: (Ord a) => [a] -> Bool
+isSorted []       = True
+isSorted [x]      = True
+isSorted (x:y:xs) = x <= y && isSorted (y:xs)
 
 ------------------------------------------------------------------------
 --  IO
