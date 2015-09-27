@@ -42,6 +42,9 @@ minimumPrice = minimum . map Yahoo.low
 filterSymbolsOfInterest :: Yahoo.QuoteMap -> Yahoo.QuoteMap
 filterSymbolsOfInterest = Map.filter isQuoteOfInterest
 
+filterTrendSymbols :: Yahoo.QuoteMap -> Yahoo.QuoteMap
+filterTrendSymbols = Map.filter isTrendQuote
+
 isQuoteOfInterest :: [Yahoo.HistoricalQuote] -> Bool
 isQuoteOfInterest list =
   let latestData        = L.maximumBy (compare `Func.on` Yahoo.date) list
@@ -49,8 +52,8 @@ isQuoteOfInterest list =
       dataWithoutLatest = filter (/= latestData) list
   in latestLow > 3 && latestLow < 800 && latestLow < maximumPrice dataWithoutLatest * 0.88
 
-isQuoteOfInterest2 :: [Yahoo.HistoricalQuote] -> Bool
-isQuoteOfInterest2 list =
+isTrendQuote :: [Yahoo.HistoricalQuote] -> Bool
+isTrendQuote list =
   let lowPrices         = map Yahoo.low list
       highPrices         = map Yahoo.high list
   in isSorted lowPrices && isSorted highPrices
@@ -102,14 +105,13 @@ host = "smtp.zoho.com"
 headline ::  String
 headline = "Folgende Kurse sind in der letzten Woche um mehr als 12% gesunken:\n"
 
-sendEmail :: String -> String -> [String]-> Yahoo.QuoteMap -> Map.Map String String -> IO ()
-sendEmail username password receivers quotes symbols = doSMTPSTARTTLS host $ \conn -> do
+sendEmail :: String -> String -> String -> [String]-> Yahoo.QuoteMap -> Map.Map String String -> IO ()
+sendEmail subject username password receivers quotes symbols = doSMTPSTARTTLS host $ \conn -> do
     authSucceed <- SMTP.authenticate LOGIN username password conn
     if authSucceed
       then mapM_ (\r -> sendPlainTextMail r username subject body conn) receivers
       else print "Authentication error."
-  where subject        = "Gefallene Kurse"
-        body           = T.pack $ (headline++) $ L.intercalate "\n" $ map quoteText (Map.keys quotes)
+  where body           = T.pack $ (headline++) $ L.intercalate "\n" $ map quoteText (Map.keys quotes)
         quoteText q    = "[" ++ q ++ "] " ++ sym q ++ " (-" ++ show (diff q) ++ "%, " ++ show (currentPrice q) ++ "):\n" ++ stockInfoUrl q
         list k         = Map.findWithDefault [] k quotes
         currentPrice k = truncate $ Yahoo.close $ last $ list k
@@ -135,6 +137,10 @@ main = do
   receiver <- require config "email_receiver" :: IO [String]
   historicalData <- Yahoo.getHistoricalData (Map.keys symbols) (addDays (-7) yesterday) yesterday
   let quotesOfInterest = filterSymbolsOfInterest historicalData
-  putStr "quotes found: "
+  let trendQuotes = filterTrendSymbols historicalData
+  putStrLn "quotes found: "
   print $ Map.size quotesOfInterest
-  unless (Map.null quotesOfInterest) $ sendEmail username password receiver quotesOfInterest symbols
+  putStrLn "trend quotes found: "
+  print $ Map.size trendQuotes
+  unless (Map.null quotesOfInterest) $ sendEmail "Gefallene Kurse" username password receiver quotesOfInterest symbols
+  unless (Map.null trendQuotes) $ sendEmail "Aufwaertstrend" username password receiver trendQuotes symbols
