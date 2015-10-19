@@ -12,9 +12,10 @@ import           Data.Aeson
 import qualified Data.ByteString.Lazy       as B
 import qualified Data.ByteString.Lazy.Char8 as BS
 import qualified Data.Function              as Func (on)
-import           Data.List                  (groupBy, intercalate)
+import           Data.List                  (groupBy, intercalate, sort)
 import           Data.List.Split
 import qualified Data.Map                   as Map
+import           Data.Time
 import           Data.Time
 import           Data.Time.Calendar         (Day (..), fromGregorian)
 import           Network.HTTP.Conduit       (simpleHttp)
@@ -22,11 +23,14 @@ import qualified Network.URI.Encode         as Enc
 import           System.Locale              (defaultTimeLocale)
 
 testFrom ::  Day
-testFrom = fromGregorian 2015 04 04
+testFrom = fromGregorian 2015 10 15
 testTo ::  Day
-testTo = fromGregorian 2015 04 08
+testTo = fromGregorian 2015 10 16
 testQuotes ::  [QuoteSymbol]
-testQuotes = ["YHOO"]
+testQuotes = ["AIR.DE"]
+
+today = fmap utctDay getCurrentTime
+yesterday = addDays (-1) <$> today
 
 type QuoteSymbol = String
 type QuoteMap = Map.Map QuoteSymbol [HistoricalQuote]
@@ -83,7 +87,7 @@ getHistoricalData symbols from to
 
 transformHistoricalData :: Maybe QuoteList -> QuoteMap
 transformHistoricalData (Just (QuoteList q)) =
-  Map.fromList $ map (\a -> (symbol (head a), a)) groupedBySymbol
+  Map.fromList $ map (\a -> (symbol (head a), sort a)) groupedBySymbol
   where
     groupedBySymbol = groupBy (Func.on (==) symbol) q
 transformHistoricalData Nothing = Map.empty

@@ -122,6 +122,9 @@ commands = [("indices", ["cac40", "dax", "euro_stoxx_50", "ftse100", "m_dax", "t
             ("all", ["aktien"])
             ]
 
+
+today = fmap utctDay getCurrentTime
+
 main :: IO ()
 main = do
   command <- head <$> getArgs
@@ -130,7 +133,7 @@ main = do
   let symbols = Map.unions $ map parseTsv contents
   putStr "symbol count: "
   print $ Map.size symbols
-  yesterday <- addDays (-1) <$> fmap utctDay getCurrentTime
+  yesterday <- addDays (-1) <$> today
   config <- loadConfig
   username <- require config "email_user" :: IO String
   password <- require config "email_password" :: IO String
