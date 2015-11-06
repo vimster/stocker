@@ -39,8 +39,8 @@ maximumPrice xs = maximum $ map Yahoo.high xs
 minimumPrice :: [Yahoo.HistoricalQuote] -> Float
 minimumPrice = minimum . map Yahoo.low
 
-filterSymbolsOfInterest :: Yahoo.QuoteMap -> Yahoo.QuoteMap
-filterSymbolsOfInterest = Map.filter isQuoteOfInterest
+filterBargainSymbols :: Yahoo.QuoteMap -> Yahoo.QuoteMap
+filterBargainSymbols = Map.filter isQuoteOfInterest
 
 filterTrendSymbols :: Yahoo.QuoteMap -> Yahoo.QuoteMap
 filterTrendSymbols = Map.filter isTrendQuote
@@ -139,11 +139,11 @@ main = do
   password <- require config "email_password" :: IO String
   receiver <- require config "email_receiver" :: IO [String]
   historicalData <- Yahoo.getHistoricalData (Map.keys symbols) (addDays (-7) yesterday) yesterday
-  let quotesOfInterest = filterSymbolsOfInterest historicalData
+  let bargainQuotes = filterBargainSymbols historicalData
   let trendQuotes = filterTrendSymbols historicalData
-  putStrLn "quotes found: "
-  print $ Map.size quotesOfInterest
+  putStrLn "bargain quotes found: "
+  print $ Map.size bargainQuotes
   putStrLn "trend quotes found: "
   print $ Map.size trendQuotes
-  unless (Map.null quotesOfInterest) $ sendEmail "Gefallene Kurse" username password receiver quotesOfInterest symbols
+  unless (Map.null bargainQuotes) $ sendEmail "Gefallene Kurse" username password receiver bargainQuotes symbols
   unless (Map.null trendQuotes) $ sendEmail "Aufwaertstrend" username password receiver trendQuotes symbols
